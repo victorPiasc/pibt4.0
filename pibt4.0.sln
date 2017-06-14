@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pibt4.0", "pibt4.0\pibt4.0.csproj", "{104E143D-083E-4DC2-BBF4-49840DFA45E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pibt.BLL", "Pibt.BLL\Pibt.BLL.csproj", "{D3764B1F-3AC7-4003-8EF3-DB8A79A90BBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pibt.DAL", "Pibt.DAL\Pibt.DAL.csproj", "{EF114BD8-A18D-41F0-A169-2988C65B80D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pibt.Common", "Pibt.Common\Pibt.Common.csproj", "{C22F9654-5436-4C01-9A86-6740C9996A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pibt.Model", "Pibt.Model\Pibt.Model.csproj", "{03BE78C6-924E-41E6-B237-B1153613B7C4}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Z_project", "Z_project", "{8D382442-8597-494D-B98E-71E8398D9887}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Z_project"
+		Debug.AspNetCompiler.PhysicalPath = "Z_project\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Z_project\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Z_project"
+		Release.AspNetCompiler.PhysicalPath = "Z_project\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Z_project\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8291"
+		SlnRelativePath = "Z_project\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Pibt.BLL\\Pibt.BLL.csproj
+		SccProjectName1 = Pibt.BLL
+		SccLocalPath1 = Pibt.BLL
+		SccProjectUniqueName2 = Pibt.Common\\Pibt.Common.csproj
+		SccProjectName2 = Pibt.Common
+		SccLocalPath2 = Pibt.Common
+		SccProjectUniqueName3 = Pibt.DAL\\Pibt.DAL.csproj
+		SccProjectName3 = Pibt.DAL
+		SccLocalPath3 = Pibt.DAL
+		SccProjectUniqueName4 = Pibt.Model\\Pibt.Model.csproj
+		SccProjectName4 = Pibt.Model
+		SccLocalPath4 = Pibt.Model
+		SccProjectUniqueName5 = pibt4.0\\pibt4.0.csproj
+		SccProjectName5 = pibt4.0
+		SccLocalPath5 = pibt4.0
+		SccWebProject6 = true
+		SccProjectUniqueName6 = Z_project
+		SccProjectName6 = Z_project
+		SccLocalPath6 = Z_project
+		SccProjectEnlistmentChoice6 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{104E143D-083E-4DC2-BBF4-49840DFA45E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104E143D-083E-4DC2-BBF4-49840DFA45E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104E143D-083E-4DC2-BBF4-49840DFA45E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104E143D-083E-4DC2-BBF4-49840DFA45E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3764B1F-3AC7-4003-8EF3-DB8A79A90BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3764B1F-3AC7-4003-8EF3-DB8A79A90BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3764B1F-3AC7-4003-8EF3-DB8A79A90BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3764B1F-3AC7-4003-8EF3-DB8A79A90BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF114BD8-A18D-41F0-A169-2988C65B80D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF114BD8-A18D-41F0-A169-2988C65B80D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF114BD8-A18D-41F0-A169-2988C65B80D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF114BD8-A18D-41F0-A169-2988C65B80D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22F9654-5436-4C01-9A86-6740C9996A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22F9654-5436-4C01-9A86-6740C9996A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22F9654-5436-4C01-9A86-6740C9996A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22F9654-5436-4C01-9A86-6740C9996A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03BE78C6-924E-41E6-B237-B1153613B7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BE78C6-924E-41E6-B237-B1153613B7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BE78C6-924E-41E6-B237-B1153613B7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BE78C6-924E-41E6-B237-B1153613B7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D382442-8597-494D-B98E-71E8398D9887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D382442-8597-494D-B98E-71E8398D9887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D382442-8597-494D-B98E-71E8398D9887}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D382442-8597-494D-B98E-71E8398D9887}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

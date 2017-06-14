@@ -1,0 +1,9 @@
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\x86\Debug\Pibt.DAL.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\x86\Debug\Pibt.DAL.pdb
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\x86\Debug\Oracle.DataAccess.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\x86\Debug\Pibt.Common.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\x86\Debug\Pibt.Model.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\x86\Debug\Pibt.Common.pdb
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\x86\Debug\Pibt.Model.pdb
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\obj\x86\Debug\Pibt.DAL.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\obj\x86\Debug\Pibt.DAL.pdb

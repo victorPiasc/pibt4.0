@@ -1,0 +1,8 @@
+CREATE OR REPLACE PROCEDURE PIA_ADMIN."WEB_GETBIZNAME"
+(pEmployerID in VARCHAR2,
+ pEmployerName OUT VARCHAR2 )
+ AS
+BEGIN
+   SELECT MIN(name) INTO pEmployerName FROM employer WHERE employerId=pEmployerId;
+END;
+/

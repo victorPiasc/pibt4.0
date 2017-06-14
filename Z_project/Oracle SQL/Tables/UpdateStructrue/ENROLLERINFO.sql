@@ -1,0 +1,2 @@
+alter table ENROLLERINFO
+add (USERID VARCHAR2(10 BYTE));

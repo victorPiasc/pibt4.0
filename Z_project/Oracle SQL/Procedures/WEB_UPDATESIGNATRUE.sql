@@ -1,0 +1,11 @@
+CREATE OR REPLACE PROCEDURE WEB_UPDATESIGNATRUE(
+   pOeId VARCHAR2,
+   pSignatrue VARCHAR2)
+AS
+BEGIN
+   UPDATE web_oe
+   SET Signatrue=pSignatrue
+   WHERE id=pOeId;
+   COMMIT;
+END;
+/

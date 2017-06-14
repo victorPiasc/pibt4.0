@@ -1,0 +1,2 @@
+alter table WAITINGPERIOD
+add (MONTHS NUMBER(2,0));

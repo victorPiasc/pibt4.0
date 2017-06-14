@@ -1,0 +1,58 @@
+CREATE OR REPLACE PROCEDURE PIA_ADMIN."WEB_UPDATEMEMBER" (
+   pMemberId        IN VARCHAR2,
+   pLastName        IN VARCHAR2,
+   pFirstName       IN VARCHAR2,
+   pMiddleName      IN VARCHAR2,
+   pMale            IN VARCHAR2,
+   pSocsecNbr       IN VARCHAR2,
+   pBirthDate       IN DATE,
+   pMarriageDate    IN DATE,
+   pHireDate        IN DATE,
+   pAddressOne      IN VARCHAR2,
+   pCity            IN VARCHAR2,
+   pState           IN VARCHAR2,
+   pZip             IN VARCHAR2,
+   pMobilePhoneNbr  IN VARCHAR2,
+   pHomePhoneNbr    IN VARCHAR2,
+   pWorkPhoneNbr    IN VARCHAR2,
+   pEmailAddress    IN VARCHAR2,
+   pHandicapped     IN VARCHAR2,
+   pDeptId          IN VARCHAR2,
+   pAdoptionDate    IN VARCHAR2,
+   pUpdatedby       IN VARCHAR2,
+   pSalaryPerPeriod IN NUMBER,
+   pPeriodsPerYear  IN NUMBER,
+   pHoursWorked     IN NUMBER,
+   pSmoker          IN VARCHAR2)
+AS
+BEGIN
+   UPDATE member
+      SET lastName       = pLastName,
+         firstName       = pFirstName,
+         middlename      = pMiddlename,
+         socsecNbr       = pSocsecNbr,
+         male            = pMale,
+         Birthdate       = Pbirthdate,
+         marriageDate    = NVL(pMarriageDate, marriageDate),
+         hireDate        = NVL(pHireDate, hireDate),
+         addressOne      = NVL(pAddressOne, addressOne),
+         city            = NVL(pCity, city),
+         state           = NVL(pState, state),
+         zip             = NVL(pZip, zip),
+         mobilePhoneNbr  = NVL(pMobilePhoneNbr, mobilePhoneNbr),
+         homePhoneNbr    = NVl(pHomePhoneNbr, homePhoneNbr),
+         workPhoneNbr    = NVL(pWorkPhoneNbr, workPhoneNbr),
+         emailAddress    = NVL(pEmailAddress,emailAddress),
+         handicapped     = NVL(pHandicapped, handicapped),
+         deptId          = NVL(pDeptId, deptId),
+         adoptionDate    = NVL(pAdoptionDate, adoptionDate),
+         updatedby       = pUpdatedby,
+         updated         = SYSDATE,
+         salaryPerPeriod = NVL(pSalaryPerPeriod, salaryPerPeriod),
+         periodsPerYear  = NVL(pPeriodsPerYear, periodsPerYear),
+         hoursWorked     = pHoursWorked,
+         smoker          = pSmoker
+      WHERE memberId=pMemberId;
+   COMMIT;
+END;
+/

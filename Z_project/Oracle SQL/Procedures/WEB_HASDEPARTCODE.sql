@@ -1,0 +1,14 @@
+﻿CREATE OR REPLACE PROCEDURE PIA_ADMIN.WEB_HASDEPARTCODE(
+    pEmployerId IN NUMBER,
+    pDeptCode IN NUMBER,
+    result OUT NUMBER
+)
+AS
+BEGIN
+    SELECT COUNT(*) INTO result 
+    FROM DEPARTMENT
+    WHERE
+        EMPLOYERID = pEmployerId AND
+        DEPTCODE = pDeptCode;
+END;
+/

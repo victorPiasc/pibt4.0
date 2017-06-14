@@ -1,0 +1,4 @@
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\bin\Debug\Pibt.Model.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\bin\Debug\Pibt.Model.pdb
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\obj\Debug\Pibt.Model.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\obj\Debug\Pibt.Model.pdb

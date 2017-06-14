@@ -1,0 +1,52 @@
+
+ALTER PROC [dbo].[Documents_Update]
+@DOCUMENTNAME NVARCHAR(100),
+@DOCUMENTURL NVARCHAR(256),
+@DOCUMENTTYPEID INT,
+@SORT INT,
+@KEYWORDS nvarchar(256),
+@UPDATEDBY NVARCHAR(50),
+@DOCUMENTID BIGINT  
+AS
+IF(@DOCUMENTID IS NULL)
+BEGIN
+ INSERT INTO [DOCUMENTS]
+           ([DOCUMENTNAME]
+           ,[DOCUMENTURL]
+           ,[DOCUMENTTYPEID]
+           ,[SORT]
+           ,[KEYWORDS] 
+           ,[CREATEDDATE]
+           ,[CREATEDBY]
+           ,[MODIFIEDDATE]
+           ,[MODIFIEDBY])
+     VALUES
+           (@DOCUMENTNAME 
+           ,@DOCUMENTURL 
+           ,@DOCUMENTTYPEID 
+           ,@SORT 
+           ,@KEYWORDS
+           ,GETDATE()
+           ,@UPDATEDBY
+           ,GETDATE()
+           ,@UPDATEDBY)
+           
+    SELECT @@IDENTITY;
+END
+ELSE
+BEGIN
+	UPDATE [DOCUMENTS]
+   SET [DOCUMENTNAME] = @DOCUMENTNAME
+      ,[DOCUMENTURL] = @DOCUMENTURL
+      ,[DOCUMENTTYPEID] = @DOCUMENTTYPEID
+      ,[SORT] = @SORT 
+      ,[KeyWords] = @KEYWORDS
+      ,[MODIFIEDDATE] = GETDATE()
+      ,[MODIFIEDBY] = @UPDATEDBY
+ WHERE DOCUMENTID=@DOCUMENTID
+END
+
+
+
+GO
+

@@ -1,0 +1,256 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.Master.cs" Inherits="Pibt.Default1" %>
+
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<%@ Register Src="UserControl/CtlNavigationBar.ascx" TagName="CtlNavigationBar" TagPrefix="uc1" %>
+<!DOCTYPE HTML>
+<html lang="en">
+<head runat="server">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <meta http-equiv="content-language" content="en" />
+   <meta name="description" content="Private Insurance Benefit Trust." />
+   <meta name="keywords" content="Private Insurance Benefit Trust." />
+   <meta name="author" content="PIASC" />
+   <%--<meta name="viewport" content="initial-scale=0.5, maximum-scale=1" />--%>
+   <meta name="viewport" content="width=1200, user-scalable=yes" />
+   <title>
+      <%--<asp:Literal ID="Literal1" runat="server" Text="<%$AppSettings:SiteName%>" />--%>
+      <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server" />
+   </title>
+   <link rel="shortcut icon" href="/images/favicon.ico" />
+   <link rel="icon" type="/image/gif" href="/images/animated_favicon1.gif" />
+   <link rel="stylesheet" href="/styles/general.css" type="text/css" media="screen" />
+   <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Open+Sans"  type='text/css' />
+   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+   <link href="/css/bootstrap.min.css" rel="stylesheet" />
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" />
+   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script>
+      if (typeof jQuery == 'undefined') {
+         document.write(unescape("%3Cscript src='/js/jquery-1.10.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+   </script>
+   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+   <script>
+      (function (i, s, o, g, r, a, m) {
+         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+         }, i[r].l = 1 * new Date(); a = s.createElement(o),
+         m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-56270033-2', 'auto');
+      ga('send', 'pageview');
+
+   </script>
+   <asp:ContentPlaceHolder ID="head" runat="server">
+   </asp:ContentPlaceHolder>
+</head>
+<body id="document">
+   <form id="form1" runat="server">
+      <div class="printonly">
+         <%--<img src="/images/logo.png" alt="" />--%>
+      </div>
+      <div id="dialog">
+      </div>
+      <div id="navbarwrapper" class="navbarwrapper">
+      </div>
+      <div id="headerwrapper">
+      </div>
+      <div id="wrapper">
+         <div id="mainmenuwrapper" class="mainmenuwrapper">
+            <uc1:CtlNavigationBar ID="CtlNavigationBar1" runat="server" />
+         </div>
+         <div id="header">
+            <div class="logo-holder">
+               <strong class="logo"><a href="/">PIBT</a></strong>
+            </div>
+                        <div class="header-area" style="margin-top: -7px;">
+                                <div class="row topLineNavArea">
+                                              <div class="topLineNav navbar-right"> 
+                <asp:LoginView ID="LoginView" runat="server">
+                <AnonymousTemplate>
+                <a href="/login.aspx" style="font-family:Open sans; float:right; font-size:larger; text-decoration: none;">Sign In</a>
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                </LoggedInTemplate>
+                   <RoleGroups>
+                      <asp:RoleGroup Roles="Employer, RK, Employee">
+                         <ContentTemplate>
+                              <div class="click-nav1">
+                                <ul class="no-js">
+                                  <li>
+                                     <a href="#" class="clicker active" style="font-family:Open sans; font-size:larger; text-decoration: none;">
+                                               Welcome, <%=Page.User.Identity.Name %>
+                                              </a>
+                                  </li>
+                                </ul>
+                              </div>
+                         </ContentTemplate>
+                      </asp:RoleGroup>
+                      <asp:RoleGroup Roles="Administrator">
+                         <ContentTemplate>
+                              <div class="click-nav1">
+                                <ul class="no-js">
+                                  <li>
+                                     <a href="#" class="clicker active" style="font-family:Open sans; font-size:larger; text-decoration: none;">
+                                               Welcome, <%=Page.User.Identity.Name %>
+                                              </a>
+                                  </li>
+                                </ul>
+                              </div>
+                         </ContentTemplate>
+                      </asp:RoleGroup>
+                   </RoleGroups>
+                </asp:LoginView>
+              </div>
+            </div>
+               <%--SearchBox--%>
+               <asp:Panel runat="server">
+                  <div style="margin-left: 34px;">
+                  </div>
+               </asp:Panel>
+               <%--SearchBar--%>
+               <ul>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <%--    <asp:Panel ID="PanelNotification" CssClass="note-list red" runat="server" Visible="<%$AppSettings:IsTestServer%>">
+        This is a testing server.
+    </asp:Panel>--%>
+      <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+      </telerik:RadScriptManager>
+      <div class="header-box" style="display: none;">
+         <ul class="info-list">
+            <li>
+               <div align="center">
+                  <img src="/images/icon-agendas.png" alt="" /><a href="/Events.aspx">Events</a>
+               </div>
+            </li>
+            <li>
+               <div align="center">
+                  <img src="/images/icon-contact-us.png" alt="" /><a href="/contactus.aspx">Contact Us</a>
+               </div>
+            </li>
+            <li>
+               <div align="center">
+                  <img src="/images/icon-blog.png" alt="" /><a href="/News.aspx">News</a>
+               </div>
+            </li>
+            <li>
+               <div align="center">
+                  <img src="/images/icon-news-library.png" alt="" /><a href="/Search.aspx">News Library
+                        Search</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <div id="mainzone" class="clear">
+         <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+         </asp:ContentPlaceHolder>
+      </div>
+      <br />
+      <br />
+   </form>
+
+
+  <%-- <div class="portal-links info-box-holder" style="margin: 0 auto; padding-bottom: 16px; margin-bottom: 8px;">
+      <div class="logos">
+          <ul>
+             <li style="padding-bottom: 10px;">
+                <a href="http://www.kaiserpermanente.org" target="_blank" class="trusted">
+                   <img src="/images/kaiser.png" id="Kaiser" alt="Kaiser Permanente" height="31" style="margin-bottom:3px;""/></a>
+             </li>
+             <li style="margin-bottom: 10px; padding-top: 5px;">
+                <a href="http://www.blueshieldca.com" target="_blank" class="trusted">
+                   <img src="/images/BSC.gif" id="BSC" alt="BSC" height="22" /></a>
+             </li>
+             <li style="margin-left:115px; padding-top: 5px;"">
+                <a href="http://www.healthnet.com" target="_blank" class="trusted">
+                   <img src="/images/healthnet.png" id="healthnet.png" alt="Health Net" height="25" /></a>
+             </li>
+         </ul>
+         <ul>
+            <li><a href="http://www.cigna.com" target="_blank" class="trusted">
+               <img src="/images/cigna.png" id="cigna" alt="Cigna" width="107" height="31" />
+            </a></li>
+            <li><a href="http://www.lhp-ca.com" target="_blank">
+               <img src="/images/landmark.png" alt="Landmark" width="83" height="31" />
+            </a></li>
+            <li><a href="http://www.unum.com" target="_blank">
+               <img src="/images/unum.png" alt="UNUM" width="83" height="31" />
+            </a></li>
+            <li><a href="http://www.westerndental.com/en-US/for-patients" target="_blank" class="trusted">
+               <img src="/images/wd.png" id="westerndental" alt="westerndental" width="111" height="35" />
+            </a></li>
+         </ul>
+         <ul>
+             <li style="padding-left:3px;">
+                <a href="http://www.humana.com" target="_blank" class="trusted">
+                   <img src="/images/Humana.png" id="Humana" alt="Humana" height="23" /></a>
+             </li>
+             <li style="margin-left:200px; margin-bottom: 10px;">
+                <a href="http://www.eyemed.com" target="_blank" class="trusted">
+                   <img src="/images/eyemed.jpg" id="EyeMed" alt="EyeMed" width="100" height="23"/></a>
+             </li>
+             <li style="margin-left:180px;">
+                <a href="http://www.vsp.com" target="_blank" class="trusted">
+                   <img src="/images/VSP.gif" id="VSP" alt="VSP" width="100" height="23"/></a>
+             </li>
+         </ul>
+         <ul>
+            <li><a href="http://www.coloniallife.com" target="_blank" class="trusted">
+               <img src="/images/coloniallife.png" id="coloniallife" alt="coloniallife" width="107" height="31" />
+            </a></li>
+            <li><a href="http://www.tasconline.com" target="_blank">
+               <img src="/images/tasc.png" alt="tasc" width="83" height="31" />
+            </a></li>
+            <li><a href="http://www.mhn.com" target="_blank">
+               <img src="/images/mhn.png" alt="mhn" width="83" height="31" />
+            </a></li>
+            <li><a href="http://www.piasc.org" target="_blank" class="trusted">
+               <img src="/images/piasc.jpg" id="piasc" alt="piasc" width="111" height="35" />
+            </a></li>
+         </ul>
+      </div>
+   </div>--%>
+
+
+   <div id="footer" style="text-align: center;">
+            <div class="" style="text-align:center; margin-left: -900px;">
+      </div>
+      <div class="copyright clearfix">
+         <div class="11" style="float: left;">
+            <p>
+               Copyright 2014 &copy; PIBT All right reserved
+            </p>
+            <p>
+               PIBT, 5800 South Eastern Avenue, Suite 400, Los Angeles, CA 90040
+            </p>
+            <p>
+               <a href="http://www.PIBT.org">www.pibt.org</a> | <a href="/PrivacyPractices.aspx">Privacy</a> | <a href="/ContactUs.aspx">Contact Us</a>
+            </p>
+         </div>
+         <div class="socialiconarea" style="">
+         <a href="https://nz.godaddy.com/ssl/ssl-certificates.aspx" style="margin-right:10px;">
+            <img src="/images/securityseal.gif" />
+         </a>
+         <a href="https://test.pibt.org">
+                       <img src="/img/navlogo.png" height="40px" width="125px" alt="logo"/></a> 
+         </div>
+      </div>
+   </div>
+   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="/js/main.js"></script>
+   <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

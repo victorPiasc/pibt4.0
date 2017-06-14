@@ -1,0 +1,1 @@
+Alter table EmployerContacts drop constraint "ECTS$FK$UPDATEDBY";

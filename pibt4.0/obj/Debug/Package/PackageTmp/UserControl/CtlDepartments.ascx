@@ -1,0 +1,85 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CtlDepartments.ascx.cs" Inherits="Pibt.UserControl.CtlDepartments" %>
+<script>
+    function onkeyPress(sender, args) {
+        if (args.get_keyCode() == 13)
+        {
+            args.get_domEvent().preventDefault();
+            args.get_domEvent().stopPropagation();
+        }
+    }
+</script>
+<div class="customer-info-box">
+    <div class="section-title">
+        Business Department Information:
+    </div>
+    <div class="section-body">
+        <asp:Literal ID="errormessage" runat="server" Visible="false"></asp:Literal>
+        <asp:Panel ID="gridPanel" runat="server" >
+        <telerik:RadGrid ID="RadGridDeparts" runat="server" AllowPaging="True" Skin="MetroTouch" AutoGenerateColumns="False" GridLines="None" AllowSorting="True" CellSpacing="0" OnNeedDataSource="RadGridDeparts_NeedDataSource" OnItemCommand="RadGridDeparts_ItemCommand" AllowAutomaticInserts="true" AllowAutomaticUpdates="false" >
+            <ClientSettings>
+                <ClientEvents OnKeyPress="onkeyPress" />
+                <KeyboardNavigationSettings />
+            </ClientSettings>
+            <PagerStyle Mode="NextPrevAndNumeric" />
+            <GroupingSettings CaseSensitive="false" />
+            <FilterMenu EnableImageSprites="False" />
+            <MasterTableView AutoGenerateColumns="False" DataKeyNames="Deptid" AllowSorting="true" PageSize="17" CommandItemDisplay="Top">
+                <PagerStyle PageSizeControlType="RadComboBox" ></PagerStyle>
+                <CommandItemSettings ShowRefreshButton="false" ShowAddNewRecordButton="true" />
+                <Columns>
+                    <telerik:GridEditCommandColumn ButtonType="ImageButton" UniqueName="EditCommandColumn">
+                        <ItemStyle CssClass="MyImageButton" Width="30"></ItemStyle>
+                    </telerik:GridEditCommandColumn>
+                    <telerik:GridBoundColumn DataField="Description" SortExpression="Description" UniqueName="Description" HeaderText="Description">
+                    </telerik:GridBoundColumn>
+                </Columns>
+                <EditFormSettings EditFormType="Template" InsertCaption="Insert">
+                    <EditColumn UniqueName="EditCommandColumn1" FilterControlAltText="Filter EditCommandColumn1 column">
+                    </EditColumn>
+                    <FormTemplate>
+                        <asp:TextBox ID="tbID" runat="server" Text='<%# Eval( "Deptid" ) %>' Visible="False">
+                        </asp:TextBox>
+                        <table class="table-container">
+                            <tr class="row">
+                                <td class="item-name">
+                                    Dept Code:
+                                </td>
+                                <td class="item-value">
+                                    <asp:TextBox ID="tbDeptCode" Text='<%# Bind( "deptcode" ) %>' runat="server" MaxLength="4"
+                                        Width="150"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvCarrierId" runat="server" ControlToValidate="tbDeptCode" CssClass="required-info"
+                                        ErrorMessage="Dept Code is required" Display="Dynamic" ValidationGroup="CustomerInfo"></asp:RequiredFieldValidator>
+                                    <asp:RangeValidator ID="rfCarrierId" runat="server" ControlToValidate="tbDeptCode" MinimumValue="0" MaximumValue="9999"
+                                        CssClass="required-info" ErrorMessage="Dept Code must be 1-9999" ValidationGroup="CustomerInfo"></asp:RangeValidator>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="item-name">
+                                    Description:
+                                </td>
+                                <td class="item-value">
+                                    <asp:TextBox ID="tbDescription" Text='<%# Bind( "Name" ) %>' runat="server" MaxLength="30"
+                                        Width="260"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="rfvDescription" runat="server" ControlToValidate="tbDescription" CssClass="required-info"
+                                        ErrorMessage="Name is required" Display="Dynamic" ValidationGroup="CustomerInfo"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <asp:Button ID="btnUpdate" ValidationGroup="CustomerInfo" runat="server" CssClass="btn"
+                                        CommandName='<%# (Container is GridEditFormInsertItem) ? "Insert" : "Update" %>'
+                                        Text='<%# (Container is GridEditFormInsertItem) ? "Save" : "Update" %>' />
+                                    &nbsp;
+                                    <asp:Button ID="btnCancel" runat="server" CausesValidation="False" CssClass="btn"
+                                        CommandName="Cancel" Text="Cancel" />
+                                </td>
+                            </tr>
+                        </table>
+                    </FormTemplate>
+                </EditFormSettings>
+            </MasterTableView>
+        </telerik:RadGrid>
+        </asp:Panel>
+    </div>
+</div>

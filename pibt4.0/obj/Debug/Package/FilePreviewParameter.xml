@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="privatechoice.com" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\VictorTFS\\PIBT\ Web\ Portal\\pibt4\.0\\pibt4\.0\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\VictorTFS\\PIBT\ Web\ Portal\\pibt4\.0\\pibt4\.0\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="privatechoice.com/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\VictorTFS\\PIBT\ Web\ Portal\\pibt4\.0\\pibt4\.0\\obj\\Debug\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="MaximumASPSqlServer-Web.config Connection String" description="" value="Data Source=PIASC-SQL2;Initial Catalog=PrivateChoice_test;User ID=pibtweb_admin;Password=pibt$5800" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\VictorTFS\\PIBT\ Web\ Portal\\pibt4\.0\\pibt4\.0\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MaximumASPSqlServer']/@connectionString" />
+  </parameter>
+  <parameter name="OracleLiveConnectionString-Web.config Connection String" description="" value="DATA SOURCE=vmtest9.world;PASSWORD=poster;USER ID=PIA_ADMIN" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\VictorTFS\\PIBT\ Web\ Portal\\pibt4\.0\\pibt4\.0\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OracleLiveConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="OraAspNetConString-Web.config Connection String" description="OraAspNetConString Connection String used in web.config by the application to access the database." value="Data Source=vmtest9.world;Persist Security Info=True;User ID=pia_admin;Password=poster;Unicode=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\VictorTFS\\PIBT\ Web\ Portal\\pibt4\.0\\pibt4\.0\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OraAspNetConString']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,19 @@
+﻿ALTER PROCEDURE [dbo].[News_GetListBySortSeq]
+@SORTSEQ INT
+AS
+   SELECT [NEWSID]
+      ,[NEWSTITLE]
+      ,[NEWSCONTENT]
+      ,[NEWSDATE]
+      ,[STARTDATE]
+      ,[ENDDATE]
+      ,[KeyWords]
+      ,[CREATEDDATE]
+      ,[CREATEDBY]
+      ,[MODIFIEDDATE]
+      ,[MODIFIEDBY]
+      ,[SORTSEQ]
+   FROM [DBO].[NEWS]
+   WHERE [SORTSEQ]=@SORTSEQ
+   ORDER BY NEWSDATE DESC
+GO

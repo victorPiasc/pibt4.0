@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Website.Master" AutoEventWireup="true" CodeBehind="OnlineQuote.master.cs" Inherits="Pibt.OnlineQuote1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" runat="server"></telerik:RadAjaxLoadingPanel>
+    <telerik:RadFormDecorator ID="RadFormDecorator2" DecoratedControls="All" ControlsToSkip="Fieldset,CheckBoxes"
+        DecorationZoneID="mainzone" runat="server" />
+    <telerik:RadAjaxPanel ID="RadAjaxPanel1" EnableAJAX="true" ClientEvents-OnRequestStart="onRequestStart" ClientEvents-OnResponseEnd="OnResponseEnd" runat="server" LoadingPanelID="RadAjaxLoadingPanel1">
+        <asp:ContentPlaceHolder ID="contentBody" runat="server" ></asp:ContentPlaceHolder>
+     </telerik:RadAjaxPanel>
+     <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+        <script type="text/javascript" src="/js/validation.js"></script>
+        <script type="text/javascript" src="/js/script.js"></script>
+        <script type="text/javascript">
+            var ajaxObjectId = "<%= RadAjaxPanel1.ClientID%>";
+            var ajaxObject = null;
+            function disableAjax() {
+                ajaxObject = $find(ajaxObjectId);
+                if (ajaxObject != null && ajaxObject.get_enableAJAX()) {
+                    ajaxObject.set_enableAJAX(false);
+                }
+            }
+            function enableAjax() {
+                ajaxObject = $find(ajaxObjectId);
+                if (ajaxObject != null && !ajaxObject.get_enableAJAX()) {
+                    ajaxObject.set_enableAJAX(true);
+                }
+            }
+            function onRequestStart(sender, args) {
+                ajaxObject = sender;
+                try {
+                    if (typeof (customRequestStart) != 'undefined') {
+                        customRequestStart(sender, args);
+                    }
+                } catch (ex) {
+                }
+                if (args.get_eventTarget().indexOf("ExportToExcelButton") >= 0 ||
+                    args.get_eventTarget().indexOf("ExportToWordButton") >= 0 ||
+                    args.get_eventTarget().indexOf("ExportToPdfButton") >= 0) {
+                    args.set_enableAjax(false);
+                }
+            }
+            function OnResponseEnd(sender, args) {
+                try {
+                    if (typeof (customResponseEnd) != 'undefined') {
+                        customResponseEnd(sender, args);
+                    }
+                } catch (ex) {
+                }
+            }
+            window.onload = function () {
+                if (typeof history.pushState === "function") {
+                    history.pushState("oldState", null, null);
+                    window.onpopstate = function () {
+                        history.pushState("newState", null, null);
+                    }
+                }
+                else {
+                    var ignoreHashChange = true;
+                    window.onchange = function () {
+                        if (!ignoreHashChange) {
+                            ignoreHashChange = true;
+                            window.location.hash = Math.random();
+                        }
+                        else {
+                            ignoreHashChange = false;
+                        }
+                    }
+                }
+            }
+        </script>
+    </telerik:RadCodeBlock>
+</asp:Content>

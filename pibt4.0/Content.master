@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/NestedBMSMasterPage.master" AutoEventWireup="true"
+    CodeBehind="Content.master.cs" Inherits="Pibt.Content" %>
+
+
+<asp:Content ID="Content5" ContentPlaceHolderID="PlaceHolderHead" runat="server">
+    <asp:ContentPlaceHolder ID="PlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
+    <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="PlaceHolderBreadcrumbs" runat="server">
+    <asp:ContentPlaceHolder ID="PlaceHolderBreadcrumbs" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="LeftMenuPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="LeftMenuPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="MiddlePlaceHolder" runat="server">
+    <div class="titleRight">
+        <div class="titleLeft clear">
+            <h1>
+                <asp:ContentPlaceHolder ID="FrameHeaderPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </h1>
+        </div>
+    </div>
+    <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" runat="server">
+    </telerik:RadAjaxLoadingPanel>
+    <table summary="content table" cellpadding="0" cellspacing="0" style="width:100%">
+        <tr>
+            <td height="100%">
+                <div class="clear">
+                    <div class="clear">
+                        <telerik:RadAjaxPanel ID="RadAjaxPanel1" EnableAJAX="true" ClientEvents-OnRequestStart="onRequestStart"
+                            ClientEvents-OnResponseEnd="OnResponseEnd" runat="server" LoadingPanelID="RadAjaxLoadingPanel1">
+                            <!-- content start -->
+                            <div id="mainDiv">
+                                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server" >
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <!-- content end -->
+                        </telerik:RadAjaxPanel>
+                        <telerik:RadCodeBlock runat="server">
+                            <script type="text/javascript" language="javascript">
+                                var ajaxObjectId = "<%= RadAjaxPanel1.ClientID%>";
+                                var ajaxObject = null;
+                                function disableAjax() {
+                                    ajaxObject = $find(ajaxObjectId);
+                                    if (ajaxObject != null && ajaxObject.get_enableAJAX()) {
+                                        ajaxObject.set_enableAJAX(false);
+                                    }
+                                }
+                                function enableAjax() {
+                                    ajaxObject = $find(ajaxObjectId);
+                                    if (ajaxObject != null && !ajaxObject.get_enableAJAX()) {
+                                        ajaxObject.set_enableAJAX(true);
+                                    }
+                                }
+                                function onRequestStart(sender, args) {
+                                    ajaxObject = sender;
+                                    try {
+                                        if (typeof (customRequestStart) != 'undefined') {
+                                            customRequestStart(sender, args);
+                                        }
+                                    } catch (ex) {
+                                    }
+                                    if (args.get_eventTarget().indexOf("ExportToExcelButton") >= 0 ||
+                                        args.get_eventTarget().indexOf("ExportToWordButton") >= 0 ||
+                                        args.get_eventTarget().indexOf("ExportToPdfButton") >= 0) {
+                                        args.set_enableAjax(false);
+                                    }
+                                }
+                                function OnResponseEnd(sender, args) {
+                                    try {
+                                        if (typeof (customResponseEnd) != 'undefined') {
+                                            customResponseEnd(sender, args);
+                                        }
+                                    } catch (ex) {
+                                    }
+                                }
+                            </script>
+                        </telerik:RadCodeBlock>
+                        
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</asp:Content>

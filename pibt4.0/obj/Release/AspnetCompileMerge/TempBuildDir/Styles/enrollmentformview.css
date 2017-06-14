@@ -1,0 +1,22 @@
+﻿.EnrollmentFormView
+{
+    text-align: left;
+    min-width: 400px;
+    border: 1px solid #000;
+}
+.EnrollmentFormView .header { height:86px; padding:20px; padding-bottom:2px; border-bottom: 1px solid #000;}
+.EnrollmentFormView .header .logo,
+.EnrollmentFormView .header .pcLogo,
+.EnrollmentFormView .header .contactInfo { float:left;}
+.EnrollmentFormView .header .logo { margin-top:6px;}
+.EnrollmentFormView .header .pcLogo { margin-top:6px;}
+.EnrollmentFormView .header .contactInfo { width:300px; padding-left:30px; font-size:9pt;}
+.EnrollmentFormView .header .contactInfo div { line-height:25px; white-space:nowrap;}
+.EnrollmentFormView .header .contactInfo div a { color:Blue; text-decoration:underline;}
+.EnrollmentFormView .empty-line { height:10px;}
+
+
+.EnrollmentFormView .section .section-title { padding-left:5px; line-height:30px; text-transform:uppercase; background-color:#000; color:#fff; font-size:9pt;} 
+.EnrollmentFormView .section .section-body { padding:15px;}
+.EnrollmentFormView .section .section-body table td { padding:3px;}
+.EnrollmentFormView .section .section-body .LegalDocContent { height:300px; margin-top:10px; overflow-y:scroll;}

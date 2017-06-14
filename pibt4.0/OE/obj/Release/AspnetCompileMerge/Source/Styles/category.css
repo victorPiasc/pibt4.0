@@ -1,0 +1,70 @@
+/* GLOBAL STYLES */
+@import url(global.css);
+
+/* UNIQUE STYLES */
+.info-box-holder					{ padding: 1px; overflow: hidden; }
+.portal-links						{ padding: 18px 8px 13px 18px; }
+#left-column						{ width: 951px; float: left; background-color:#fff; }
+#info-box							{ padding: 19px; }
+#info-box ul						{ list-style: none; margin: 0; padding: 0; }
+#info-box ul li						{ margin-bottom: 8px; }
+#info-box ul li a					{ color: #331C01; }
+#info-box h1						{ font-size:1.9em; }
+#featured-promo						{ margin-bottom: 18px; color: #331C01; }
+#featured-promo h2					{ font-size: 1.83em/1.19em; margin-top: 0; }
+#featured-promo img					{ margin-bottom: 2px; }
+.row								{ margin-bottom: 10px; clear: both; }
+.sub-category-1						{ width: 226px; margin-right: 7px; float: left; }
+.sub-category-2						{ width: 226px; margin-right: 0; float: left; }
+.sub-category-1 img,
+.sub-category-2 img					{ margin-bottom: 2px; }
+li.more a							{ color: #331c01 !important; }
+#right-column						{ width: 246px; margin-left: 1px; float: left; background-color:#def3ff; } /* width: 245px; */
+#right-column h1					{ font-size:1.9em; margin: 0; }
+#news-box							{ padding: 20px; }
+#news-box ul						{ line-height: 1.17em; margin: 0; padding: 0 4px 7px 0; list-style: none; }
+#news-box ul li						{ padding: 10px 0; }
+#news-box ul a						{ color: #fff !important; }
+#calendar							{ padding: 20px;  border-top: #FFF solid 1px; }
+#calendar h2						{ font-size: 1.4em; color: #FFF; text-align: center; margin-top: 0; }
+#calendar table						{ width: 165px; }
+#calendar td						{ background: #d0d0d0; font-weight: bold; padding: 5px; text-align: center; }
+#calendar td.end					{ background: none; }
+#calendar td.blank					{ background: #FFF; }
+#calendar td.selected a				{ color: #FFF; }
+#calendar td.current				{ background: #d1b16e; color: #331c01; }
+#calendar a							{ color: #FFF; }
+#login								{ padding: 20px 10px; border-top: #FFF solid 1px; }
+#program-search						{ padding: 0 10px 20px 10px; }
+.login-form input.big-text			{ width: 192px; }
+.block								{ background: #FFF; margin-top: 5px; }
+.block .frame						{ height: 1%; overflow: hidden; padding: 9px 12px 9px; }
+.question-box						{ height: 1%; background: #e9e7dc; font-size: 1.17em; font-weight: bold; }
+.question-box						{ padding: 6px; border: solid #d7d1c4; border-width: 1px 0; overflow: hidden; }
+#calendar a							{ color: #331c01; }
+#calendar .click					{ width: 200px; height: 20px; text-align: center; valign: center; background: #FFF; font-size: 1.2em; margin: 0; padding:0px; }
+#calendar ul.calendar				{ list-style: none; margin: 0; padding: 0; padding-bottom: 5px; color: #FFF !important; }
+#calendar ul.calendar li			{ padding: 5px 0; }
+#calendar ul.calendar li 			{ border-bottom: thin solid #FFF; color: #FFF; }
+#calendar ul.calendar li  a			{ color: #FFF; }
+#calendar ul.calendar li:last-child 	{ border-bottom: none !important; }
+#inner-left-column					{ width: 226px; float: left; }
+ul#sub-menu 						{ margin: 10px 0; }
+ul#sub-menu a						{ font-size: 0.9em; }
+ul#sub-menu ul						{ padding-top: 3px; margin-bottom: 10px; padding-left: 15px; Deb-border-bottom: 1px solid #F7E2D3; }
+ul#sub-menu ul li a .banner			{ display: none; margin-bottom: -50px; }
+#category-links						{ font-size: 1.2em; padding: 14px; }
+#category-links	h2					{ margin-top: 0; }
+#inner-right-column					{ width: 400px; width: 438px; color: #331c01; zborder-left: #008fcf dotted 1px; padding: 0 0 14px 14px; float: right; }
+#inner-right-column h1				{ margin-top: 0; padding-top: 0; }
+#auxiliary-menu	ul					{ padding: 0 15px 0 0; list-style-type: none !important; margin-left: 0 !important; padding-left: 0 !important; }
+#auxiliary-menu	ul ul				{ padding-left: 30px; list-style-type: disc; }				 
+.normal-list ul						{ list-style-type: disc !important; margin-left: 20px !important; padding-left: 20px !important; }
+#inner-right-column #sub-menu ul ul	{ margin-left: 10px !important; padding-left: 10px !important; }
+#inner-right-column #sub-menu,
+#inner-right-column #sub-menu ul 	{ list-style: none outside none !important; }
+.staff_table td						{ vertical-align: top; border-bottom: #c2baa4 solid 1px; padding: 15px 0 5px 0; }
+.staff_table .photo					{ width: 25%; padding: 0 15px 20px 0; }
+.staff_table .info					{ width: 75%; }
+blockquote							{ background: #f5f4ea; border: #d7d1c4 solid 1px; padding: 0 10px; }
+#badge								{ background: #FFF; text-align: center; padding: 10px; }

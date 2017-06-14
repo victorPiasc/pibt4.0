@@ -1,0 +1,5 @@
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\bin\Release\Pibt.Model.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\bin\Release\Pibt.Model.pdb
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\obj\Release\Pibt.Model.csprojResolveAssemblyReference.cache
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\obj\Release\Pibt.Model.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.Model\obj\Release\Pibt.Model.pdb

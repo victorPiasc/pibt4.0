@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true"
+    CodeBehind="NestedBMSMasterPage.master.cs" Inherits="Pibt.NestedBMSMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
+    <%--<asp:Literal ID="Literal1" runat="server" Text="<%$AppSettings:SystemName%>" />--%>
+    <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">    
+    <asp:ContentPlaceHolder ID="PlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="PlaceHolderMain" runat="server">   
+    <div class="info-box-holder theme-box" style="margin: 0 auto;">
+        <div id="left-column">
+            <div id="breadcrumbs">                
+                <asp:ContentPlaceHolder ID="PlaceHolderBreadcrumbs" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="info-box">
+                <div id="featured-promo" class="dontprint">
+                </div>
+                <table class="qsfTable" cellspacing="0">
+                    <tr>
+                        <td class="qsfLeft dontprint">
+                            <div class="navigationNodes">
+                                <asp:ContentPlaceHolder ID="LeftMenuPlaceHolder" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </td>
+                        <td class="qsfSpliter dontprint">
+                            &nbsp;
+                        </td>
+                        <td class="qsfRight">
+                            <%-- content start --%>
+                            <asp:ContentPlaceHolder ID="MiddlePlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <%-- content end --%>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="right-column" class="dontprint">
+            <asp:ContentPlaceHolder ID="PlaceHolderRightSide" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>

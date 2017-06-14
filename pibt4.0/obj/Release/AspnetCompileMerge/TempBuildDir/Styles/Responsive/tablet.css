@@ -1,0 +1,54 @@
+@media only screen and (min-width: 641px) {
+
+
+/*----- SOCIAL -----*/
+header .social {
+	position: absolute;
+	top: 46px;
+	right: 2%;	
+}	
+header .social li {
+	width: 44px;
+	float: left;
+	border: none;
+	background-color: transparent;
+	text-align:center;
+	padding: .3em 0;
+}
+
+/*----- BANNER -----*/
+#banner {
+   background-image:url(../images/CustomerService.jpg);
+   height: 400px;
+}
+
+
+
+/*----- 12 COLUMN LAYOUT -----*/
+	.column-1, .column-2, .column-3, .column-4, .column-6, .column-8, .column-9, .column-10, .column-12 {
+		float: left;
+	}
+    .column-1 {width: 8.3333%;}
+    .column-2 {width: 16.6666%;}
+	.column-3 {width: 25%;}
+	.column-4 {width: 33.3333%;}
+	.column-6 {width: 50%;}
+    .column-8 {width: 66.6666%;}
+	.column-9 {width: 75%;}
+    .column-10{width: 83.333%;}
+
+
+
+
+
+/*----- PHOTOS -----*/
+	figure.col4 {
+		width: 31.333%;
+		float: right;	
+	}
+
+
+
+
+
+} /*end of the media query */

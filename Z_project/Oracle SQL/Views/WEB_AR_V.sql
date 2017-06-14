@@ -1,0 +1,1 @@
+DROP VIEW WEB_AR_V

@@ -1,0 +1,21 @@
+CREATE PROCEDURE [News_GetById]
+(@NEWSID bigint)
+WITH 
+EXECUTE AS CALLER
+AS
+SELECT [NEWSID]
+      ,[NEWSTITLE]
+      ,[NEWSCONTENT]
+      ,[NEWSDATE]
+	  ,[STARTDATE]
+	  ,[ENDDATE]
+	  ,[SORTSEQ]
+      ,[KeyWords]
+      ,[CREATEDDATE]
+      ,[CREATEDBY]
+      ,[MODIFIEDDATE]
+      ,[MODIFIEDBY]
+  FROM [DBO].[NEWS]
+  WHERE [NEWSID]=@NEWSID
+GO
+

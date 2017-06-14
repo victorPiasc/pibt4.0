@@ -1,0 +1,259 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebSiteWithFooter.Master.cs" Inherits="Pibt.WebSiteNoFooter" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>PIBT </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+   <link href="/styles/responsive/reset.css" rel="stylesheet">
+   <!-- phone-default -->
+   <link href="/styles/responsive/phone-default.css" rel="stylesheet">
+   <!-- enhance-tablet -->
+   <link href="/styles/responsive/tablet.css" rel="stylesheet">
+   <!-- enhance-desktop -->
+   <link href="/styles/responsive/desktop.css" rel="stylesheet">
+   <!-- font-awesome -->
+   <link href="/styles/responsive/font-awesome.css" rel="stylesheet">
+   <!-- mobile navigation CSS -->
+   <link href="/styles/responsive/mobilemenu.css" rel="stylesheet">
+   <%--<link href="/css/bootstrap.min.css" rel="stylesheet" />--%>
+   <link href="/css/fonts/Open-Sans.css" rel="stylesheet" />
+   <link rel="icon" type="image/ico" href="favicon.ico" />
+   <%--<script src="js/bootstrap.min.js"></script>--%>
+   <script>
+      $(document).ready(function () {
+         $(".nav-button").click(function () {
+            $(".nav-button,.primary-nav").toggleClass("open");
+         });
+      });
+</script>
+   <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+   <asp:ContentPlaceHolder ID="head" runat="server">
+   </asp:ContentPlaceHolder>
+</head>
+<body>
+   <div id="colorbar"></div>
+   <!-- end color bar -->
+
+   <div id="headerWrapper">
+      <header class="clearfix">
+
+         <hgroup>
+            <%--<h1>PIBT</h1>--%>
+            <img src="../img/pibtlogo1.png" />
+         </hgroup>
+
+         <a class="tel" tabindex="-1" href="tel:(323) 728-9500">(323) 728-9500</a>
+         <ul class="social">
+        <%--<li><a href="#"><span class="fa fa-facebook fa-fw"></span></a></li>
+            <li><a href="#"><span class="fa fa-pinterest fa-fw"></span></a></li>
+            <li><a href="#"><span class="fa fa-twitter fa-fw"></span></a></li>
+            <li><a href="#"><span class="fa  fa-google-plus fa-fw"></span></a></li>--%>
+         </ul>
+      </header>
+   </div>
+   <!-- end of header wrapper -->
+
+   <div id="navWrapper">
+      <nav class="nav ">
+         <ul class="primary-nav clearfix">
+            <li class="selected"><a href="/index.aspx">Home</a></li>
+            <li class="parent"><a href="#">About Us</a>
+               <ul>
+                  <li><a href="/missionstatement.aspx">Mission Statement</a></li>
+                  <li><a href="/aboutus.aspx">Who We Are</a></li>
+                  <li><a href="/trustees.aspx">Trustees</a></li>
+                  <li><a href="/news.aspx">News</a></li>
+                  <li><a href="/events.aspx">Events</a></li>
+               </ul>
+            </li>
+            <li><a href="/onlinedocuments.aspx">Online Documents</a></li>
+            <li class="parent"><a href="#">Resources & Partners</a>
+               <ul>
+                  <li><a href="/qalist.aspx">FAQ</a></li>
+                  <li><a href="/ombudsman.aspx">OMBUDSMAN</a></li>
+                  <li><a href="/privacypractices.aspx">Privacy Practices</a></li>
+                  <li><a href="/OnlineQuoteEmployer.aspx">Get a Quote</a></li>
+               </ul>
+            </li>
+            <li><a href="/contactus.aspx">Contact Us</a></li>
+            <li class="floatright" style="float: right;">
+               <asp:LoginView ID="LoginView" runat="server">
+                  <AnonymousTemplate>
+                     <%--<button class="btn btn-primary btn-sm"  style="margin-top:-10px; margin-left:80px;" data-toggle="modal" data-target="#loginDialog" onclick="location.href='/login.aspx'" style="float:right;">Sign In</button>--%>
+                     <a href="/login.aspx"  style="font-weight:bold; font-size:100%; text-decoration:underline;">PIBT Portal Sign In!</a>
+                  </AnonymousTemplate>
+                  <LoggedInTemplate>
+                     <%--<a href="#" class="btnModal" style="font-family:Open sans; font-size:larger; text-decoration: none;"
+                    onclick="ExecuteCodeBehindclickEvent()">
+                 Welcome, <%=Page.User.Identity.Name %><div class="caret" style="padding-bottom:15px !important;"></div>
+                </a>--%>
+                     <a runat="server" href="/default.aspx" title="Manage your account">Back to PIBT Portal =></a>
+                     <%--<ul class="nav navbar-nav navbar-right">
+                        <li></li>--%>
+                        <%--<li><asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Sign out" LogoutPageUrl="/login.aspx" OnLoggingOut="Unnamed-Loggingout" /></li>--%>
+                     </ul>
+                     <%--                   <ul class="nav navbar-nav navbar-right">
+                                     <li><a href="#" class="dropdonw-toggle" data-toggle="dropdown">
+                     <img src="Images/male.png" alt="Me" class="avatar" /><b class="caret"></b>
+                      </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">Logout</a></li>
+                     </ul>
+                  </li>
+                      </ul>--%>
+                  </LoggedInTemplate>
+               </asp:LoginView>
+            </li>
+         </ul>
+         <button class="nav-button">Toggle Navigation</button>
+
+      </nav>
+   </div>
+   <form id="form1" runat="server">
+      <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+      </telerik:RadScriptManager>
+      <div>
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         </asp:ContentPlaceHolder>
+      </div>
+   </form>
+
+   <div class="contentWrapper">
+      <div class="row">
+         <div class="column-12">
+         </div>
+         <hr />
+      </div>
+      <div style="margin: 0 auto;">
+         <!-- 1st Row Tasc, piasc,unum-->
+         <div class="row" style="text-align: center;">
+            <div class="column-4">
+               <a href="http://www.tasconline.com" target="_blank">
+                  <img src="/images/tasc.png" alt="Tasc" height="30" />
+               </a>
+            </div>
+            <div class="column-4">
+               <a href="http://www.piasc.org" target="_blank" class="trusted">
+                  <img src="/images/piasc.jpg" id="ftPIASC" alt="PIANC" height="30" />
+               </a>
+            </div>
+            <div class="column-4">
+               <a href="http://www.unum.com" target="_blank">
+                  <img src="images/CarrierLogos/Unum_logo_1.jpg" height="30" />
+               </a>
+            </div>
+         </div>
+         <!--2nd Row LandMark , Humana,Cigna-->
+         <div class="row" style="text-align: center;">
+            <div class="column-4">
+               * <a href="http://www.lhp-ca.com" target="_blank">
+                  <img src="/images/CarrierLogos/Landmark_logo_2015.jpg" alt="Landmark" height="40" />
+               </a>
+            </div>
+
+            <div class="column-4">
+               <a href="http://www.blueshieldca.com" target="_blank" class="trusted">
+                  <img src="/images/BSC.gif" id="BSC" alt="BSC" height="22" /></a>
+            </div>
+            <div class="column-4">
+               <a href="http://www.cigna.com" target="_blank" class="trusted">
+                  <img src="/images/cigna.png" id="FtRaster1" alt="Cigna" height="40" />
+               </a>
+            </div>
+         </div>
+         <!--3rd Row BS,WD,KP-->
+         <div class="row" style="text-align: center;">
+                        <div class="column-4">
+               <a href="http://www.humana.com" target="_blank" class="trusted">
+                  <img src="/images/Humana.png" id="Humana" alt="Humana" height="22" /></a>
+            </div>
+            <div class="column-4">
+              * <a href="http://www.westerndental.com/en-US/for-patients" target="_blank" class="trusted">
+                  <img src="/images/CarrierLogos/Western_Dental_Horiz_Logo-Color.jpg" id="ftPIANC1" alt="PIANC" height="33" />
+               </a>
+            </div>
+            <div class="column-4">
+               <a href="http://www.coloniallife.com" target="_blank" class="trusted">
+                  <img src="/images/coloniallife.png" id="FtRaster" alt="ColonialLife" height="40" />
+               </a>
+            </div>
+         </div>
+         <!--4th Row EyeMed,HN,VSP-->
+         <div class="row" style="text-align: center;">
+
+            <div class="column-4">
+               * <a href="http://www.healthnet.com" target="_blank" class="trusted">
+                  <img src="/images/healthnet.png" id="healthnet.png" alt="Health Net" height="30" /></a>
+            </div>
+            <div class="column-4">
+               <a href="http://www.kaiserpermanente.org" target="_blank" class="trusted">
+                  <img src="/images/kaiser.png" id="Kaiser" alt="Kaiser Permanente" height="30" /></a>
+            </div>
+           <div class="column-4">
+               <a href="http://www.vsp.com" target="_blank" class="trusted">
+                  <img src="/images/VSP.png" id="VSP" alt="VSP" height="50" /></a>
+            </div>
+         </div>      
+         <!--5th Row ColonialLife,Filler,MHN -->
+         <div class="row" style="text-align: center;">
+            <div class="column-4">
+               <a href="http://www.mhn.com" target="_blank">
+                  <img src="/images/mhn.png" alt="HMN" height="30" />
+               </a>
+            </div>
+            <div class="column-4">
+               <a href="http://piag.org/" target="_blank" class="trusted">
+                  <img src="/images/PIAG.jpg" id="PIAG" alt="PIAG" height="30" />
+               </a>
+            </div>
+
+            <div class="column-4">
+               <a href="http://www.eyemed.com" target="_blank" class="trusted">
+                  <img src="/images/eyemed.jpg" id="EyeMed" alt="EyeMed"  height="30" /></a>
+            </div>     
+         </div>
+         <!-- 6TH Row VMA, filler, PIASD -->
+         <div class="row" style="text-align: center;">
+            <div class="column-4">
+               <a href="http://main.vma.bz/" target="_blank">
+                  <img src="/images/VMAlogo.png" alt="VMA" height="50" />
+               </a>
+            </div>
+            <div class="column-4">
+               <a href="./" target="_blank" class="trusted">
+                  <img src="/images/filler.jpg" id="filler" alt="filler" height="10" />
+               </a>
+            </div>
+
+            <div class="column-4">
+               <a href="http://piasd.org/" target="_blank" class="trusted">
+                  <img src="/images/PIASD.jpg" id="PIASD" alt="PIASD"  height="40" /></a>
+            </div>     
+         </div>
+      </div>  
+      
+      <div class="row" style="text-align:right">
+        * Available in California Only.
+      </div>   
+      <div class="row">
+         <hr />
+      </div>
+   </div>  
+  
+   <div id="footerWrapper" >
+      <footer>
+         <p>Copyright &copy; 2015  &bull; PIBT &bull; 5800 S. Eastern Ave. #400 Los Angeles, CA 90040 &bull; 323-728-9500</p>
+      </footer>
+   </div>
+   </body>
+</html>

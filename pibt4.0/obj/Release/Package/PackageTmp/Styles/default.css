@@ -1,0 +1,51 @@
+/* GLOBAL STYLES */
+@import url(global.css);
+#document                               {   color: #A09E97;
+                                            font-size: 1.2em;
+                                            background: none repeat scroll 0 0 #D5D2C5;}
+
+/* UNIQUE STYLES */
+.testimonials					{ width: 348px; background: #fbfdfe url(../images/bg-quotes-block.gif) no-repeat; font-family: Georgia,Times,serif; }
+.testimonials					{ margin: 2px 20px 0 0; padding: 24px 0 0; position: relative; float: left; }
+.testimonials blockquote		{ margin: 0; }
+.testimonials q					{ margin: 0 0 39px 12px; }
+.testimonials cite				{ display: block; background: #e9e7dc url(../images/bg-cite.gif) no-repeat; font-style: normal; color: #8b7763; letter-spacing: -0.5px; }
+.testimonials cite				{ line-height: 1.75em; border-bottom: 1px solid #8e7966; padding: 20px 5px 11px 15px; position: relative; }
+.testimonials cite strong		{ display: block; font-weight: normal; font-size: 1.4em; margin-bottom: 3px; }
+.testimonials cite strong a		{ background: url(../images/arrow-brown.gif) no-repeat 100% 5px; color: #8b7763; padding-right: 21px; }
+.testimonials .photo			{ position: absolute; top: 20px; }
+.testimonials small				{ font-size: 0.8em; }
+.info-box-holder,
+.info-block-holder				{ width: 98%; padding: 18px 8px 13px 20px; overflow: hidden; }
+.info-block-holder				{ width: 96%; padding: 18px 18px 18px 18px; }
+.news-block						{ width: 327px; margin-top: 2px; position: relative; z-index: 2; float: right; }
+.block							{ background: url(../images/bg-block.gif) repeat-y; margin-bottom: 5px; }
+.block .holder					{ background: url(../images/bg-block-holder.gif) no-repeat; }
+.block .frame					{ background: url(../images/bg-block-frame.gif) no-repeat 0 100%; overflow: hidden; padding: 9px 12px 9px; }
+.block .frame p					{ margin: 10px 0; }
+.question-box					{ min-height: 35px; background: #e9e7dc url(../images/zico-question-mark.gif) no-repeat 98% 8px; font-size: 1.17em; }
+.question-box					{ font-weight: bold; overflow: hidden; padding: 6px 11px 8px 11px; border: solid #d7d1c4; border-width: 1px 0; }
+.question-box .star				{ display: block; color: #331c01; margin-left: 5px; }
+.news-box						{ background: #0085cd; margin-bottom: 10px; padding: 14px 11px 11px 20px; }
+.news-box .heading				{ height: 1%; overflow: hidden; }
+.news-box .rss					{ width: 18px; height: 18px; background: url(../images/ico-rss.gif) no-repeat; text-indent: -9999px; }
+.news-box .event				{ width: 28px; height: 23px; background: url(../images/ico-event.gif) no-repeat; text-indent: -9999px; }
+.news-box .rss,
+.news-box .event				{ overflow: hidden; float: right; }
+.news-box h2.news				{ font-size: 24px; color: #FFF; margin: 0 0 5px; text-shadow: 0 1px 0 #000; filter: dropshadow(color=#000, offx=0, offy=1); }
+.news-box h2.news a				{ color: #FFF; }
+.news-box ul					{ line-height: 1.17em; margin: 0; padding: 0 4px 7px 0; list-style: none; }
+.news-box ul li					{ background: url(../images/separator-news-list.gif) repeat-x 0 100%; padding: 7px 0 9px; }
+.news-box ul a					{ color: #fff; }
+.news-box .more					{ color: #fff; }
+.member-box						{ margin: 0 0 4px 2px; }
+.login-form input.big-text		{ width: 197px; }
+
+/* ATTENTION GRABBING BAR */
+div#fixedbox 					{ width: 100%; overflow: hidden; margin: 0 auto; padding: 0;  position: relative; z-index: 9999; }
+#fixedbox div span				{ width: 16px; display: block; position: absolute; top: 11px; right: 20px; }
+#fixedbox div					{ width: 100%; background: url(../images/quickpoll-tile.gif) repeat-x; zbackground: #004b84; font-size:1.6em; color: #FFF; margin: 0; padding: 3px; border-bottom: 2px solid #000; text-align: center; z-index: 9999; }
+#fixedbox div img				{ padding-right: 10px; }
+#fixedbox div a					{ color: #000; color: #7bddff; text-decoration: none; font-size: 0.85em; }
+#fixedbox div a:hover			{ text-decoration: underline; }
+marquee							{ min-width: 400px; }

@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="New_Style_Test.master.cs" Inherits="Pibt.New_Style_Test" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="titlePlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Styles/general_test.css" type="text/css" /> <!-- Our style-->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" /> <!-- Boostrap for mobile friendly adaptations-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" /> <!-- Boostrap glyphs-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</head>
+<body id="documnet">
+    <form id="form1" runat="server">
+        <div class="wrap">
+            <!-- header start-->
+            <div id="header">
+                <div>
+                    <img id="logo" src="images/newStyleImages/logo.png" alt="PIBT" />
+                    <ul class="topBar">
+                        <li style="padding-top:10px;" >(323) 728-9500</li>
+                        <li style="padding-top:10px;"><a href="mailto:OnlineHelpDesk@piasc.org">OnlineHelpDesk@piasc.org</a></li>
+                        <li><asp:Button ID="signIn" CssClass="btn" runat="server" Text="Sign In" /></li>
+                    </ul>
+                </div>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Online Documents</a></li>
+                                <li><a href="#">Resources & FAQ</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- header end-->
+            <!-- body start -->
+            <div id="body">
+                    <!-- this content place holder should be a control that dynamically changes -->
+                    <asp:ContentPlaceHolder ID="menuPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="bodyPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+            </div>
+            <!-- body end --> 
+            <div class="push"></div>
+        </div>
+        <!-- footer start -->
+        <div id="footer" class="footer">
+            <div class="left">
+                
+                <ul>
+                    <li>5800 S. Eastern Ave Suite 400<br /> Los Angeles, CA 90040</li>
+                    <li>Email us: <a href="mailto:OnlineHelpDesk@piasc.org">OnlineHelpDesk@piasc.org</a></li>
+                    <li>Call us: (800) 449-4849</li>
+                    <li>FAX: (323) 271-0138</li>
+                </ul>
+            </div>
+            <div class="central">
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Online Documents</a></li>
+                    <li><a href="#">Resources & FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                
+                Our support is available to help you<br> 24 hours a day, seven days a week
+                <ul>
+                    <li>Monday-Friday: 09:00AM - 09:00PM</li>
+                    <li>Saturday: 09:00AM - 09:00PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer end -->
+    </form>
+</body>
+</html>

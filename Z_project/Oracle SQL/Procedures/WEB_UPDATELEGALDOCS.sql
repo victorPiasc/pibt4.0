@@ -1,0 +1,11 @@
+CREATE OR REPLACE PROCEDURE WEB_UPDATELEGALDOCS(
+   pOeId VARCHAR2,
+   pLegalDocs VARCHAR2)
+AS
+BEGIN
+   UPDATE web_oe
+   SET LegalDocs=pLegalDocs
+   WHERE id=pOeId;
+   COMMIT;
+END;
+/

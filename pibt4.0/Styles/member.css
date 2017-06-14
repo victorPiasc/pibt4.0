@@ -1,0 +1,11 @@
+.memberbox 						{ color: #331c01; }
+.memberbox a						{ display: block; font-weight: bold; color: #BE4500 !important; padding: 5px; }
+/* .memberbox a:hover					{ background: #553306; text-decoration: none; } */
+.memberbox .row					{ height: 64px; background: url(../images/fade-bg.gif) repeat-x; border: #d5d2c5 solid 1px; margin: 10px 0; }
+.memberbox .box					{ width: 33%; border-right: #d5d2c5 solid 1px; }
+.memberbox .last					{ border-right: 0; }
+.member							{ background: #f1efeb; border: #d5d2c5 solid 1px; margin-top: 8px; }
+.member .block						{ background: none; margin-bottom: 0; margin: 10px; }
+.member .block .holder				{ background: none; }
+.member .block .frame				{ height: 1%; background: none; overflow: hidden; padding: 0; }
+.members-promo						{ min-width: 400px; margin: 2px 20px 0 0; padding: 0; position: relative; float: left; }

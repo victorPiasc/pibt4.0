@@ -1,0 +1,9 @@
+
+CREATE PROC [dbo].[News_Delete]
+@NEWSID BIGINT 
+AS
+ DELETE FROM [DBO].[NEWS]
+  WHERE [NEWSID]=@NEWSID
+
+GO
+

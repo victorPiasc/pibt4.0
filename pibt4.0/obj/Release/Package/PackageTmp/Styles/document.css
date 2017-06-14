@@ -1,0 +1,38 @@
+#document .theme-box					{ background-color:#fff;}
+#document li.icon a						{ background: url(../images/education-external-icon.gif) no-repeat top right; padding-right: 17px; }
+#document #right-column h1				{ color: #004B84; }
+#document #info-box h1,
+#document #info-box h1 a				{ color: #004B84; }
+#document #info-box a					{ zcolor: #004B84; }
+#document #news-box						{ border-bottom: #7b9aab solid 1px; }
+#document #news-box h1					{ background: url(../images/ico-document-rss.gif) no-repeat right; }
+#document #news-box ul li				{ background: url(../images/document-separator-news-list.gif) repeat-x 0 100%; }
+#document #news-box ul a				{ color: #004B84 !important; }
+#document #news-box .more				{ color: #331c01; }
+#document #calendar						{ background: url(../images/document-rightcolumn-texture.jpg) no-repeat; border-bottom: #7b9aab solid 1px; }
+#document #calendar h1					{ background: url(../images/ico-document-calendar.gif) no-repeat right; }
+#document #calendar h2					{ color: #004B84; }
+#document #calendar ul.calendar li 			{ border-bottom: thin solid #004B84; }
+#document #calendar ul.calendar li  a		{ color: #004B84; }
+#document #calendar td					{ color: #004B84; }
+#document #calendar td.selected			{ background: #004B84; }
+#document #calendar td.end a			{ color: #004B84; }
+#document #featured-promo				{ border-bottom: #004B84 solid 7px; }
+#document .sub-category-1 .photo,
+#document .sub-category-2 .photo		{ border-bottom: #004B84 solid 5px; }
+#document .login-form .login			{ background: url(../images/btn-login.gif) no-repeat; }
+#document .login-form .search			{ background: url(../images/btn-search2.gif) no-repeat; }
+#document .block h3						{ color: #004B84; }
+#document #category-links				{ background: #e0f0f9; }
+#document #category-links h2			{ color: #004B84; }
+#document #category-links ul li a		{ color: #004B84; }
+#document .divider						{ background: url(../images/education-inner-column-tile.gif) repeat-y; }
+#document #auxiliary-menu				{ border-top: #dff1f9 dashed 1px; }
+#document #right-column #text-area h1	{ color: #004B84; }
+#document #right-column #news-box h1,
+#document #right-column #calendar h1	{ color: #004B84; }
+#document #inner-right-column #auxiliary-menu ul li a,
+#document #inner-right-column #sub-menu li a { color: #331C01 !important; }
+#document #auxiliary-menu ul li a,
+#document #text-area a,
+#document #inner-right-column a			{ color: #004B84 !important; }

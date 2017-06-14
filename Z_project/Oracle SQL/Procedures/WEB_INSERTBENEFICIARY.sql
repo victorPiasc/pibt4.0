@@ -1,0 +1,1 @@
+﻿DROP PROCEDURE web_insertBeneficiary

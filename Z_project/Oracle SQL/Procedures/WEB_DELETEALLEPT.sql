@@ -1,0 +1,9 @@
+﻿CREATE OR REPLACE PROCEDURE PIA_ADMIN."WEB_DELETEALLEPT" (
+   pCartId VARCHAR2)
+AS
+BEGIN
+   DELETE FROM web_qqEmployerPlanType
+   WHERE cart=pCartId;
+   COMMIT;
+END;
+/

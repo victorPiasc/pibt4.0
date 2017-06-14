@@ -1,0 +1,1 @@
+﻿DROP PROCEDURE Web_QuickQuote;

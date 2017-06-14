@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true"
+    CodeBehind="NestedBMSMasterPage.master.cs" Inherits="Pibt.NestedBMSMasterPage" %>
+
+<%@ Register Src="UserControl/CtlCurrentNews.ascx" TagName="CtlCurrentNews" TagPrefix="uc1" %>
+<%@ Register Src="UserControl/CtlCurrentEvents.ascx" TagName="CtlCurrentEvents" TagPrefix="uc2" %>
+<%@ Register Src="UserControl/CtlShare.ascx" TagName="CtlShare" TagPrefix="uc3" %>
+<%@ Register Src="UserControl/CtlTags.ascx" TagName="CtlTags" TagPrefix="uc4" %>
+<%@ Register Src="UserControl/CtlTopQAs.ascx" TagName="CtlTopQAs" TagPrefix="uc5" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
+    <%--<asp:Literal ID="Literal1" runat="server" Text="<%$AppSettings:SystemName%>" />--%>
+    <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">    
+    <asp:ContentPlaceHolder ID="PlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="PlaceHolderMain" runat="server">   
+    <div class="info-box-holder theme-box" style="margin: 0 auto;">
+        <div id="left-column">
+            <div id="breadcrumbs">
+                <a href="/">Home</a>
+                <asp:ContentPlaceHolder ID="PlaceHolderBreadcrumbs" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="info-box">
+                <div id="featured-promo">
+                </div>
+                <table class="qsfTable" cellspacing="0">
+                    <tr>
+                        <td class="qsfLeft">
+                            <div class="navigationNodes">
+                                <%--<img width="175" height="80" id="imgCalulator" src="/images/magnify.png" alt="" />--%>
+                                <asp:ContentPlaceHolder ID="LeftMenuPlaceHolder" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </td>
+                        <!-- qsfLeft -->
+                        <td class="qsfSpliter">
+                            &nbsp;
+                        </td>
+                        <td class="qsfRight">
+                            <!-- content start -->
+                            <asp:ContentPlaceHolder ID="MiddlePlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <!-- content end -->
+                        </td>
+                        <!-- qsfRight -->
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="right-column">
+            <%--
+            <uc1:CtlCurrentNews ID="CtlCurrentNews1" runat="server" />
+            <uc2:CtlCurrentEvents ID="CtlCurrentEvents1" runat="server" />
+            <uc5:CtlTopQAs ID="CtlTopQAs1" runat="server" />
+            <uc3:CtlShare ID="CtlShare1" runat="server" />
+            <uc4:CtlTags ID="CtlTags1" runat="server" />
+            --%>
+            <asp:ContentPlaceHolder ID="PlaceHolderRightSide" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>

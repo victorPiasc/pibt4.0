@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Value" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAlwCXAAD/7gAOQWRvYmUAZAAAAAAB/+IMWElDQ19QUk9GSUxFAAEBAAAMSExp
+        bm8CEAAAbW50clJHQiBYWVogB84AAgAJAAYAMQAAYWNzcE1TRlQAAAAASUVDIHNSR0IAAAAAAAAAAAAA
+        AAAAAPbWAAEAAAAA0y1IUCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAARY3BydAAAAVAAAAAzZGVzYwAAAYQAAABsd3RwdAAAAfAAAAAUYmtwdAAAAgQAAAAUclhZWgAA
+        AhgAAAAUZ1hZWgAAAiwAAAAUYlhZWgAAAkAAAAAUZG1uZAAAAlQAAABwZG1kZAAAAsQAAACIdnVlZAAA
+        A0wAAACGdmlldwAAA9QAAAAkbHVtaQAAA/gAAAAUbWVhcwAABAwAAAAkdGVjaAAABDAAAAAMclRSQwAA
+        BDwAAAgMZ1RSQwAABDwAAAgMYlRSQwAABDwAAAgMdGV4dAAAAABDb3B5cmlnaHQgKGMpIDE5OTggSGV3
+        bGV0dC1QYWNrYXJkIENvbXBhbnkAAGRlc2MAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAA
+        AAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAFhZWiAAAAAAAADzUQABAAAAARbMWFlaIAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAA
+        b6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9kZXNjAAAAAAAA
+        ABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAAAAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGVzYwAAAAAAAAAuSUVDIDYx
+        OTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3BhY2UgLSBzUkdCAAAAAAAAAAAAAAAuSUVDIDYxOTY2
+        LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3BhY2UgLSBzUkdCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRl
+        c2MAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAA
+        AAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAB2aWV3AAAAAAATpP4AFF8uABDPFAAD7cwABBMLAANcngAAAAFYWVogAAAAAABM
+        CVYAUAAAAFcf521lYXMAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAKPAAAAAnNpZyAAAAAAQ1JUIGN1
+        cnYAAAAAAAAEAAAAAAUACgAPABQAGQAeACMAKAAtADIANwA7AEAARQBKAE8AVABZAF4AYwBoAG0AcgB3
+        AHwAgQCGAIsAkACVAJoAnwCkAKkArgCyALcAvADBAMYAywDQANUA2wDgAOUA6wDwAPYA+wEBAQcBDQET
+        ARkBHwElASsBMgE4AT4BRQFMAVIBWQFgAWcBbgF1AXwBgwGLAZIBmgGhAakBsQG5AcEByQHRAdkB4QHp
+        AfIB+gIDAgwCFAIdAiYCLwI4AkECSwJUAl0CZwJxAnoChAKOApgCogKsArYCwQLLAtUC4ALrAvUDAAML
+        AxYDIQMtAzgDQwNPA1oDZgNyA34DigOWA6IDrgO6A8cD0wPgA+wD+QQGBBMEIAQtBDsESARVBGMEcQR+
+        BIwEmgSoBLYExATTBOEE8AT+BQ0FHAUrBToFSQVYBWcFdwWGBZYFpgW1BcUF1QXlBfYGBgYWBicGNwZI
+        BlkGagZ7BowGnQavBsAG0QbjBvUHBwcZBysHPQdPB2EHdAeGB5kHrAe/B9IH5Qf4CAsIHwgyCEYIWghu
+        CIIIlgiqCL4I0gjnCPsJEAklCToJTwlkCXkJjwmkCboJzwnlCfsKEQonCj0KVApqCoEKmAquCsUK3Arz
+        CwsLIgs5C1ELaQuAC5gLsAvIC+EL+QwSDCoMQwxcDHUMjgynDMAM2QzzDQ0NJg1ADVoNdA2ODakNww3e
+        DfgOEw4uDkkOZA5/DpsOtg7SDu4PCQ8lD0EPXg96D5YPsw/PD+wQCRAmEEMQYRB+EJsQuRDXEPURExEx
+        EU8RbRGMEaoRyRHoEgcSJhJFEmQShBKjEsMS4xMDEyMTQxNjE4MTpBPFE+UUBhQnFEkUahSLFK0UzhTw
+        FRIVNBVWFXgVmxW9FeAWAxYmFkkWbBaPFrIW1hb6Fx0XQRdlF4kXrhfSF/cYGxhAGGUYihivGNUY+hkg
+        GUUZaxmRGbcZ3RoEGioaURp3Gp4axRrsGxQbOxtjG4obshvaHAIcKhxSHHscoxzMHPUdHh1HHXAdmR3D
+        HeweFh5AHmoelB6+HukfEx8+H2kflB+/H+ogFSBBIGwgmCDEIPAhHCFIIXUhoSHOIfsiJyJVIoIiryLd
+        IwojOCNmI5QjwiPwJB8kTSR8JKsk2iUJJTglaCWXJccl9yYnJlcmhya3JugnGCdJJ3onqyfcKA0oPyhx
+        KKIo1CkGKTgpaymdKdAqAio1KmgqmyrPKwIrNitpK50r0SwFLDksbiyiLNctDC1BLXYtqy3hLhYuTC6C
+        Lrcu7i8kL1ovkS/HL/4wNTBsMKQw2zESMUoxgjG6MfIyKjJjMpsy1DMNM0YzfzO4M/E0KzRlNJ402DUT
+        NU01hzXCNf02NzZyNq426TckN2A3nDfXOBQ4UDiMOMg5BTlCOX85vDn5OjY6dDqyOu87LTtrO6o76Dwn
+        PGU8pDzjPSI9YT2hPeA+ID5gPqA+4D8hP2E/oj/iQCNAZECmQOdBKUFqQaxB7kIwQnJCtUL3QzpDfUPA
+        RANER0SKRM5FEkVVRZpF3kYiRmdGq0bwRzVHe0fASAVIS0iRSNdJHUljSalJ8Eo3Sn1KxEsMS1NLmkvi
+        TCpMcky6TQJNSk2TTdxOJU5uTrdPAE9JT5NP3VAnUHFQu1EGUVBRm1HmUjFSfFLHUxNTX1OqU/ZUQlSP
+        VNtVKFV1VcJWD1ZcVqlW91dEV5JX4FgvWH1Yy1kaWWlZuFoHWlZaplr1W0VblVvlXDVchlzWXSddeF3J
+        XhpebF69Xw9fYV+zYAVgV2CqYPxhT2GiYfViSWKcYvBjQ2OXY+tkQGSUZOllPWWSZedmPWaSZuhnPWeT
+        Z+loP2iWaOxpQ2maafFqSGqfavdrT2una/9sV2yvbQhtYG25bhJua27Ebx5veG/RcCtwhnDgcTpxlXHw
+        cktypnMBc11zuHQUdHB0zHUodYV14XY+dpt2+HdWd7N4EXhueMx5KnmJeed6RnqlewR7Y3vCfCF8gXzh
+        fUF9oX4BfmJ+wn8jf4R/5YBHgKiBCoFrgc2CMIKSgvSDV4O6hB2EgITjhUeFq4YOhnKG14c7h5+IBIhp
+        iM6JM4mZif6KZIrKizCLlov8jGOMyo0xjZiN/45mjs6PNo+ekAaQbpDWkT+RqJIRknqS45NNk7aUIJSK
+        lPSVX5XJljSWn5cKl3WX4JhMmLiZJJmQmfyaaJrVm0Kbr5wcnImc951kndKeQJ6unx2fi5/6oGmg2KFH
+        obaiJqKWowajdqPmpFakx6U4pammGqaLpv2nbqfgqFKoxKk3qamqHKqPqwKrdavprFys0K1ErbiuLa6h
+        rxavi7AAsHWw6rFgsdayS7LCszizrrQltJy1E7WKtgG2ebbwt2i34LhZuNG5SrnCuju6tbsuu6e8Ibyb
+        vRW9j74KvoS+/796v/XAcMDswWfB48JfwtvDWMPUxFHEzsVLxcjGRsbDx0HHv8g9yLzJOsm5yjjKt8s2
+        y7bMNcy1zTXNtc42zrbPN8+40DnQutE80b7SP9LB00TTxtRJ1MvVTtXR1lXW2Ndc1+DYZNjo2WzZ8dp2
+        2vvbgNwF3IrdEN2W3hzeot8p36/gNuC94UThzOJT4tvjY+Pr5HPk/OWE5g3mlucf56noMui86Ubp0Opb
+        6uXrcOv77IbtEe2c7ijutO9A78zwWPDl8XLx//KM8xnzp/Q09ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn
+        +3f8B/yY/Sn9uv5L/tz/bf///9sAQwAMCAgICQgMCQkMEQsKCxEVDwwMDxUYExMVExMYFxIUFBQUEhcX
+        GxweHBsXJCQnJyQkNTMzMzU7Ozs7Ozs7Ozs7/9sAQwENCwsNDg0QDg4QFA4PDhQUEBEREBQdFBQVFBQd
+        JRoXFxcXGiUgIx4eHiMgKCglJSgoMjIwMjI7Ozs7Ozs7Ozs7/8AAEQgAaAFDAwEiAAIRAQMRAf/EAB8A
+        AAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFB
+        BhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldY
+        WVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfI
+        ycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYH
+        CAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy
+        0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWG
+        h4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz
+        9PX29/j5+v/aAAwDAQACEQMRAD8A63RdKu9Q0q2vZtVvlknTcyrKNoOT0ypq7/wjk3/QXv8A/v6P/iak
+        8Kf8i7Yf9cv6mtepSVl6HXXxFWNapFNJRnJJcq2v6GJ/wjk3/QXv/wDv6P8A4mj/AIRyb/oL3/8A39H/
+        AMTW3RT5UZ/Wq383/kq/yMT/AIRyb/oL3/8A39H/AMTR/wAI5N/0F7//AL+j/wCJrboo5UH1qt/N/wCS
+        r/IxR4fvUOYtYvAf+mhVx+RUU908SWq5ikt9QA/gdTC5/wCB72X9K16KLCeIm/iUZ/4or81ZmTB4giVl
+        i1SF9MnY4UTcxsf9mYDYfzrVBBGRyD0NRXNrbXURhuYlmibqjgMP1rHc3Xh5/M3vcaO5ClGJZ7bP8W5s
+        lo/qeKNVvsNQhV0prkqfyXvGXlF9/Jm9RTVZXUMpDKwyCOQQe4p1MwMjxNJOmnIIJXgeS4hjMkZ2sFdw
+        rYP0NR/8I5N/0F7/AP7+j/4mn+J/+PCD/r7t/wD0atbFTZNs6VVnTow5Ha8p30T7GJ/wjk3/AEF7/wD7
+        +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
+</value>
+  </data>
+  <data name="textBox145.Value" xml:space="preserve">
+    <value>I understand that (except for Small Claims Court cases, claims subject to a Medicare appeals procedure, and, if I am enrolled in coverage that is subject to the ERISA claims procedure regulation, or any claims that cannot be subject to binding arbitration under governing law) any dispute between myself, my heirs, relatives, or other associated parties on the one hand and Kaiser Foundation Health Plan, Inc. (KFHP), any contracted health care providers, administrators, or other associated parties on the other hand, for alleged violation of any duty arising out of or related to membership in KFHP, including any claim for medical or hospital malpractice (a claim that medical services were unnecessary or unauthorized or were improperly, negligently, or incompetently rendered), for premises liability, or relating to the coverage for, or delivery of, services or items, irrespective of legal theory, must be decided by binding arbitration under California law and not by lawsuit or resort to court process, except as applicable law provides for judicial review of arbitration proceedings. I agree to give up our right to a jury trial and accept the use of binding arbitration. I understand that the full arbitration provision is contained in the Evidence of Coverage.</value>
+  </data>
+  <data name="textBox18.Value" xml:space="preserve">
+    <value>If you or a family member were disabled as of the date of termination of coverage with a prior health insurer, you may be entitled to an extension of health benefits according to California Insurance Code § 10128. Under this law, the prior insurer retains responsibility until whichever of the following occurs first: (a) the member is no longer totally disabled; (b) the maximum benefits of the prior insurer’s cover age are paid; or (c) a period of 12 consecutive months has passed since the date coverage ended with the prior insurer.</value>
+  </data>
+  <data name="textBox20.Value" xml:space="preserve">
+    <value>Total disability, as it relates to the law described above, means: Employee - when, as a result of bodily injury or disease, the employee
+is unable to engage in any employment or occupation for which he or she is or becomes qualified for by reason of education, training or experience and is not, in fact, engaged in any employment or occupation for wage or profit; or Family Member - when the family member is prevented from performing all regular and customary activities usual for a person of that age.</value>
+  </data>
+  <data name="textBox65.Value" xml:space="preserve">
+    <value>Below please sign and date the application. Your signature indicates that you have accurately provided all requested information.  Further, you have read and you accept the plan information, including the information listed on sections 2-4 of this form including your agreement to submit disputes to binding arbitration.</value>
+  </data>
+  <data name="textBox46.Value" xml:space="preserve">
+    <value>I understand that any controversy between any Participant and PIBT (including its agents, staff physicians and employees) and its providers involving a claim in tort, contract or otherwise, is subject to binding arbitration. (Applicable only to CA residents.)</value>
+  </data>
+  <data name="textBox49.Value" xml:space="preserve">
+    <value>I agree, for myself and my dependents, that in the event any health services provided are the primary responsibility of any other party by way of other group health coverage or by the act or omission of another person to fully inform PIBT and will execute such assignments, liens, or other documents which may be necessary to enable the plan to recover the value of the services provided. I further agree that in the event I or any of my dependents collect benefits or damages from any other party who has primary responsibility for services provided by the plan, I will immediately reimburse the plan to the extent of services provided, to the extent permitted by state law.</value>
+  </data>
+  <data name="textBox124.Value" xml:space="preserve">
+    <value>The authorization below to obtain and release medical information is being requested from you to comply with the terms of the Confidentiality of Medical Information Act, effective January 1, 1980, Section 56 et seq. of the California Civil Code. Your cooperation is requested.</value>
+  </data>
+  <data name="textBox126.Value" xml:space="preserve">
+    <value>You hereby authorize your physician, health care practitioner, hospital, clinic or other medically related facility to furnish an agent, designees or representatives of the plan you selected or PIBT or its agents, designees or representatives, any and all records pertaining to medical history, services rendered or treatment given to anyone enrolled hereunder, or added hereunder for purpose of review, investigation, or evaluation of an application or a claim. You authorize the plan you selected, PIBT or its agents, designees or representatives, to disclose to a hospital or health care service plan, self-insurer, any such medical information obtained if such disclosure is necessary to allow the processing of any claim. This authorization shall become effective immediately and shall remain in effect as long as it is necessary to enable the plan you selected or PIBT or its agents, designees or representatives to process claims and benefits.</value>
+  </data>
+  <data name="textBox143.Value" xml:space="preserve">
+    <value>You understand that any dispute or controversy, except medical malpractice, that may arise regarding the performance, interpretation or breach of the agreement between you (and/or any enrolled family member) and the plan you selected, PIBT or its agents, designees or representatives or any Participating Medical Group / Independent Physicians Association, whether arising in contract, tort or otherwise, must be submitted to arbitration in lieu of a jury or court trial.</value>
+  </data>
+  <data name="textBox97.Value" xml:space="preserve">
+    <value>1. Do you believe that you or any family member for whom you are applying for coverage would be considered totally disabled according to the definitions of   {Space(6)}disability provided in Section 11?</value>
+  </data>
+  <data name="textBox22.Value" xml:space="preserve">
+    <value>I accept the coverage/insurance benefits provided by this group ancillary plan(s) and authorize the processing of my enrollment in the ancillary coverages as indicated on this form. I authorize the deduction from my earnings of the required contributions, if any, toward the cost of the coverage(s). I authorize payment of ancillary benefits to the provider of care.</value>
+  </data>
+  <metadata name="$this.ShowSnapGrid" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.SnapToGrid" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

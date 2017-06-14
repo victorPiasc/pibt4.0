@@ -1,0 +1,10 @@
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\Release\Pibt.DAL.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\Release\Pibt.DAL.pdb
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\Release\Oracle.DataAccess.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\Release\Pibt.Common.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\Release\Pibt.Model.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\Release\Pibt.Common.pdb
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\bin\Release\Pibt.Model.pdb
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\obj\Release\Pibt.DAL.csprojResolveAssemblyReference.cache
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\obj\Release\Pibt.DAL.dll
+C:\VictorTFS\PIBT Web Portal\pibt4.0\Pibt.DAL\obj\Release\Pibt.DAL.pdb

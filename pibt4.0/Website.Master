@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Website.master.cs" Inherits="Pibt.Website" %>
+
+<!doctype html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <title><%=Pibt.Common.Utilities.Us()%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link href="/styles/responsive/reset.css" rel="stylesheet">
+    <link href="/styles/responsive/phone-default.css" rel="stylesheet">
+    <link href="/styles/responsive/tablet.css" rel="stylesheet">
+    <link href="/styles/responsive/desktop.css" rel="stylesheet">
+    <link href="/styles/responsive/font-awesome.css" rel="stylesheet">
+    <link href="/styles/responsive/mobilemenu.css" rel="stylesheet">
+    <link href="/css/fonts/Open-Sans.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/general.css" type="text/css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        function phoneFixer() {
+            document.getElementById("topThing").style.width = "" + window.innerWidth + "px";
+        }
+        $(document).ready(function () {
+            $(".nav-button").click(function () {
+                $(".nav-button,.primary-nav").toggleClass("open");
+            });
+        });
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-70981109-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="topThing" style="width: 100%">
+    <div id="wrap">
+        <div id="colorbar"></div>
+        <div id="headerWrapper" class="dontprint">
+            <div id="header">
+                <div class="logo-holder">
+                    <strong class="<%=Pibt.Common.Utilities.LogoPicker()%>"><a href="/"><%=Pibt.Common.Utilities.Us()%></a></strong>
+                    <header style="position: inherit">
+                        <a class="tel" tabindex="-1" href="tel:(323) 728-9500">(323) 728-9500</a>
+                        <ul class="social">
+                        </ul>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="navWrapper" class="dontprint" style="text-align:center">
+            <nav class="nav ">
+                <ul class="primary-nav clearfix">
+                    <li ><a href="/index.aspx">Home</a></li>
+                    <li class="parent"><a href="#">About Us</a>
+                        <ul>
+                            <li><a href="/aboutus.aspx">Who We Are</a></li>
+                            <li><a href="/missionstatement.aspx">Mission Statement</a></li>
+                            <li><a href="/trustees.aspx">Trustees</a></li>
+                            <li><a href="/news.aspx">News</a></li>
+                            <li><a href="/events.aspx">Events</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/onlinedocuments.aspx">Online Documents</a></li>
+                    <%--<li><a href="OnlineQuoteEmployer.aspx">Quick Quote</a></li>--%>
+                    <li class="parent"><a href="#">Employer</a>
+                        <ul>
+                             <li><a href="Login.aspx">Employer Portal Login</a></li>
+                           <%-- <li><a href="OnlineQuoteEmployer.aspx">Quick Quote</a></li>--%>
+                        </ul>
+                    </li>
+                    <li><a href="#">Employee</a>
+                        <ul>
+                            <li><a href="EELogin.aspx">Employee Portal Login</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent"><a href="#">Resources</a>
+                        <ul>
+                            <li><a href="/qalist.aspx">FAQ</a></li>
+                            <li><a href="/ombudsman.aspx">Ombudsman</a></li>
+                            <li><a href="/privacypractices.aspx">Privacy Practices</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contactus.aspx">Contact Us</a></li>
+                </ul>
+                <button class="nav-button">Toggle Navigation</button>
+            </nav>
+        </div>
+        <form id="form1" class="form" runat="server">
+            <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+            </telerik:RadScriptManager>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+    <div id="footerWrapper" class="dontprint">
+        <footer>
+            <p>&copy;2015-2016 PIBT &bull; <%=Pibt.Common.Utilities.Us()%> &bull; 5800 S. Eastern Ave. #400 Los Angeles, CA 90040 &bull; 323-728-9500</p>
+        </footer>
+    </div>
+</body>
+</html>

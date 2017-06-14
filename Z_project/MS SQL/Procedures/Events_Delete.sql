@@ -1,0 +1,9 @@
+
+CREATE PROC [dbo].[Events_Delete]
+@EventID BIGINT  
+AS
+DELETE FROM [EVENTs] WHERE EVENTID=@EVENTID
+
+
+GO
+

@@ -1,0 +1,2 @@
+alter table PLANTYPE
+add (BENEFICIARY CHAR(1 BYTE));

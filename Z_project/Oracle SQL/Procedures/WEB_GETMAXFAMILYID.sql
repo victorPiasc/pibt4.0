@@ -1,0 +1,10 @@
+﻿CREATE OR REPLACE PROCEDURE PIA_ADMIN."WEB_GETMAXFAMILYID" (
+   pCartId   IN  NUMBER,
+   pFamilyId OUT NUMBER)
+AS
+BEGIN
+   SELECT NVL(MAX(familyId),0) INTO pFamilyId
+      FROM web_qqCart
+      WHERE cart=pCartId;
+END;
+/

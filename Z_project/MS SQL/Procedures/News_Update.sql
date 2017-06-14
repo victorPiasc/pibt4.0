@@ -1,0 +1,61 @@
+
+ALTER PROC [dbo].[News_Update]
+@NEWSTITLE NVARCHAR(50),
+@NEWSCONTENT NVARCHAR(MAX),
+@NEWSDATE DATETIME,
+@STARTDATE DATETIME,
+@ENDDATE DATETIME,
+@KEYWORDS NVARCHAR(256),
+@UPDATEDBY NVARCHAR(50),
+@NEWSID BIGINT,
+@SORTSEQ INT  
+AS
+IF(@NEWSID IS NULL)
+BEGIN
+ INSERT INTO [NEWS]
+           ([NEWSTITLE]
+           ,[NEWSCONTENT]
+           ,[NEWSDATE]
+           ,[STARTDATE]
+           ,[ENDDATE]
+           ,[KeyWords]
+           ,[CREATEDDATE]
+           ,[CREATEDBY]
+           ,[MODIFIEDDATE]
+           ,[MODIFIEDBY]
+           ,[SORTSEQ])
+     VALUES
+           (@NEWSTITLE
+           ,@NEWSCONTENT
+           ,@NEWSDATE
+           ,@STARTDATE
+           ,@ENDDATE
+           ,@KEYWORDS 
+           ,GETDATE()
+           ,@UPDATEDBY
+           ,GETDATE()
+           ,@UPDATEDBY
+           ,@SORTSEQ)
+           
+    SELECT @@IDENTITY;
+END
+ELSE
+BEGIN
+	UPDATE [NEWS]
+	SET [NEWSTITLE] = @NEWSTITLE
+	  ,[NEWSCONTENT] = @NEWSCONTENT
+	  ,[NEWSDATE] = @NEWSDATE
+     ,[STARTDATE] = @STARTDATE
+     ,[ENDDATE] = @ENDDATE
+	  ,[KeyWords] = @KEYWORDS 
+	  ,[MODIFIEDDATE] = GETDATE()
+	  ,[MODIFIEDBY] = @UPDATEDBY
+     ,[SORTSEQ] = @SORTSEQ
+	WHERE NEWSID=@NEWSID
+ 
+END
+
+
+
+GO
+

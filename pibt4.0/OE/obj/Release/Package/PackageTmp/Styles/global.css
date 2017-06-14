@@ -1,0 +1,115 @@
+
+* { font-size: 100.01%; }
+html { font-size: 62.5%; }
+body { font: 1.2em "Segoe UI", Arial, Helvetica, sans-serif; margin: 0; }
+img { border: medium none; }
+a { color: #555E62; text-decoration: none; }
+a:hover { text-decoration: underline; }
+form, fieldset { border-style: none; margin: 0; padding: 0; }
+blockquote q { quotes: none; }
+blockquote q:before { content: ""; }
+blockquote q:after { content: ""; }
+input:focus, select:focus, textarea:focus, button:focus { outline: medium none; }
+.printonly { display: none; }
+#wrapper { margin: 0 auto; padding: 0 4px; width: 1200px; }
+#header { background: url("../images/header-fade-bg.png") repeat-x scroll 0 0 transparent; height: 126px; margin-bottom: 10px; }
+#header:after { clear: both; content: ""; display: block; }
+#header .logo-holder { float: left; padding: 0; width: 303px; }
+#header .logo { background: url("../images/logo.png") no-repeat scroll 0 0 transparent; float: left; height: 84px; margin: 27px 0 0 25px; overflow: hidden; text-indent: -9999px; width: 245px; }
+#header .logo a { display: block; height: 100%; }
+#header .header-area { float: left; padding: 48px 0 0; width: 677px; }
+#header .header-box { height: 1%; padding-bottom: 1px; }
+#header .header-box { margin-bottom: 4px; overflow: hidden; }
+#header h1 { color: #004B84; display: inline; float: left; font-size: 1.83em/1.19em; margin: 6px 20px 0 3px; }
+.info-list { float: right; font-size: 0.9em; font-weight: bold; list-style: none outside none; margin: 0; padding: 5px 0 0; }
+.info-list li { display: inline; float: left; padding: 0 21px; }
+.info-list li:first-child { padding: 0 21px 0 0; }
+.info-list li:last-child { padding: 0 0 0 21px; }
+.info-list a { color: #004B84; display: block; padding: 4px 0 0; }
+.info-list .inactive a { color: #C7C1B5; }
+.info-list .inactive a:hover { text-decoration: none; }
+#header #second-info-list { position: relative; }
+#header #second-info-list fieldset { background-image: none !important; border: 0px; }
+#header #social { position: relative; }
+#header #social #buttons { color: #A09E97; position: absolute; right: 17px; top: -65px; }
+#header #social #buttons p { margin: 0 0 7px; }
+#header #social #buttons div { margin: 0 0 7px; }
+#header #social #buttons a { padding: 3px; }
+#header form { }
+#header form .text { background: url("../images/search-input-bg.png") no-repeat scroll 0 0 transparent; float: left; padding: 4px 20px; }
+#header form .text input { background: none repeat scroll 0 0 transparent; border: 0 none; color: #004B84; float: left; font-size: 18px; margin: 0 0 5px; padding: 6px 0; width: 528px; }
+#header form .text .submit { background: url("../images/icon-search.png") no-repeat scroll 0 0 transparent; cursor: pointer; height: 20px; margin-top: 10px; width: 25px; }
+#header form .text a { font-size: 0.9em; }
+#mainmenuwrapper { /*height: 45px;*/ }
+#mainmenu { background: none repeat scroll 0 0 #002C4C; display: inline; float: left; font-size: 13px; font-weight: bold; list-style: none outside none; margin: 0; padding-left: 0; position: relative; width: 1200px; z-index: 1001; }
+#mainmenu li { float: left; margin: 0 20px; }
+#mainmenu a { color: #FFFFFF; cursor: pointer; float: left; padding: 8px 10px 9px 9px; position: relative; z-index: 9; }
+#mainmenu a:hover, #mainmenu li:hover a, #mainmenu li.hover a { background: url("../images/bg-nav-hover.gif") no-repeat scroll 0 0 transparent; padding: 0 0 0 9px; text-decoration: none; }
+#mainmenu a:hover span, #mainmenu li:hover a span, #mainmenu li.hover a span { background: url("../images/bg-nav-hover.gif") no-repeat scroll 100% 0 transparent; color: #331C01; float: left; padding: 8px 10px 9px 0; }
+#mainmenu li:hover, #mainmenu li.hover { position: relative; }
+#mainmenu li:hover .drop, #mainmenu li.hover .drop { display: block; }
+#mainmenu .drop { background: none repeat scroll 0 0 #FFFFFF; display: none; padding: 7px; width: 256px; }
+#mainmenu .drop { border: 1px solid #CECCBF; left: 0; position: absolute; top: 31px; z-index: 8; }
+#mainmenu .drop strong { display: block; }
+#mainmenu .drop strong a { background: none repeat scroll 0 0 transparent !important; color: #331C01; float: none; }
+#mainmenu .drop strong a:hover { text-decoration: underline; }
+#mainmenu ul { float: none; font-size: 11px/1.27em; list-style: none outside none; margin: 0 0 7px; padding: 0; }
+#mainmenu ul li { background: none repeat scroll 0 0 transparent; float: none; padding: 0 0 2px; }
+#mainmenu ul li a { background: none repeat scroll 0 0 transparent !important; color: #331C01; display: block; float: none; padding: 6px 10px; }
+#mainmenu ul li a:hover { text-decoration: underline; }
+#mainmenu .right-side { left: auto; right: 0; }
+.members-promo { z-index: 1000; }
+* html #mainmenu .odd { right: -1px; }
+#breadcrumbs { background: none repeat scroll 0 0 #F5F4EA; padding: 10px; }
+#breadcrumbs a { color: #331C01; font-weight: bold; padding: 10px; }
+#breadcrumbs span { padding: 10px; }
+.info-block { float: left; margin-right: 16px; width: 231px; }
+.info-box { float: left; margin-right: 11px; width: 227px; }
+.info-box img { display: block; margin-bottom: 16px; }
+.info-box h4 { color: #238B83; font-size: 2em; margin: 0 0 7px; }
+.info-box ul { list-style: none outside none; margin: 0; padding: 0; }
+.info-box ul li { margin-bottom: 5px; }
+.info-box ul a { color: #331C01; }
+.box-orange ul a { }
+.box-purple ul a { }
+.box-blue ul a { }
+.box-green h4, .box-green h4 a { color: #238B83; }
+.box-orange h4, .box-orange h4 a { color: #AE5600; }
+.box-purple h4, .box-purple h4 a { color: #7D394F; }
+.box-blue h4, .box-blue h4 a { color: #00688F; }
+.navy strong a { color: #004B84 !important; }
+.green strong a { color: #238B83 !important; }
+.orange strong a { color: #AE5600 !important; }
+.purple strong a { color: #7D394F !important; }
+.blue strong a { color: #00688F !important; }
+.info-box-holder, .info-block-holder { background: none repeat scroll 0 0 #FFFFFF; border-bottom: 1px solid #CBC9C2; height: 1%; margin-bottom: 10px; overflow: hidden; }
+.info-box-holder .logos ul { float: left; margin-top: 10px; list-style: none outside none; }
+.info-box-holder .logos ul li { float: left; padding-left: 20px; }
+.info-block { float: left; margin-right: 16px; width: 231px; }
+.block h3 { color: #331C01; font-size: 1.17em; font-weight: normal; margin: 0 0 10px; }
+
+.sub-holder { padding: 12px 8px 12px 20px; }
+.box { margin-top: 6px; }
+.box img { display: block; }
+.left { float: left; margin-right: 76px; }
+.right { float: right; margin-right: 10px; }
+#footer { background: none repeat scroll 0 0 #EAE9E2; border-bottom: 1px solid #CBC9C2; height: 1%; text-align: center; width: 1165px; }
+#footer { color: #4C4C4C; margin-bottom: 10px; overflow: hidden; padding: 20px; }
+#footer .social-networks { float: right; margin: 20px 15px 0; }
+#footer .social-networks div { background: url("../images/bg-social.gif") no-repeat scroll 0 0 transparent; float: left; padding-left: 3px; }
+#footer ul { float: left; list-style: none outside none; margin: 0; padding: 5px 5px 5px 0; }
+#footer ul li { float: left; margin-left: 3px; }
+#footer h4 { float: left; font-size: 1em; font-weight: normal; margin: 5px 0 0; }
+#footer ul a { color: #A09E97; display: block; height: 16px; overflow: hidden; text-indent: -9999px; width: 16px; }
+#footer ul a.twitter { background: url("../images/ico-twitter.gif") no-repeat scroll 0 0 transparent; margin-left: 6px; }
+#footer ul a.facebook { background: url("../images/ico-facebook.gif") no-repeat scroll 0 0 transparent; margin-left: 2px; }
+#footer p { margin: 0; }
+#footer address { font-style: normal; padding: 0; }
+#footer #logos { float: left; }
+#footer .trusted { background: url("../images/footer-trusted-choice.gif") no-repeat scroll 0px 25px transparent; display: block; height: 70px; width: 136px; }
+#footer .text { padding-top: 15px; }
+.slogan { color: #004B84; font-size: 14px; font-weight: bold; padding-bottom: 15px; text-align: center; }
+.underline-anchors p a, .underline-anchors a { text-decoration: underline !important; }
+.red, .message-error { color: Red !important; }
+.RadForm A.rfdSkinnedButton { padding-right: 0px !important; }
+
